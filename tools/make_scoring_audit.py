@@ -47,6 +47,6 @@ def main():
  t.extend([r'\bottomrule\end{tabular}\end{table}'])
  tex='\n'.join(t)+'\n'
  tex=tex.replace('\n\\begin{table}','\n\n\\begin{table}').replace('\\end{table}\n','\\end{table}\n\n')
- (R/'manuscript/sections/app_scoring_audit.tex').write_text(tex)
+ (R/'build/tables/app_scoring_audit.tex').write_text(tex)
  print(json.dumps({'court':out['court'],'parliament':out['parliament'],'rows':len(out['by_model_condition'])}))
 if __name__=='__main__':main()

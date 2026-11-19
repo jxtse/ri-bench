@@ -3,8 +3,8 @@
 
 Reads results/revision8/open_review_v3.jsonl (constructed-vote design, eight models) and
 results/rebuttal/{or_e1,or_e2a,or_e2b,or_e3a,or_e3b,or_e3c}.jsonl, and writes
-manuscript/sections/table_or_controls.tex (pooled, main text) and
-manuscript/sections/table_or_controls_models.tex (per model, appendix).
+build/tables/table_or_controls.tex (pooled, main text) and
+build/tables/table_or_controls_models.tex (per model, appendix).
 Intervals: whole-paper case-cluster bootstrap, 10,000 draws, seed 20260914 (tools/revision_statistics.py).
 Deterministic; no model calls. Usage: .venv/bin/python tools/make_rebuttal_tables.py
 """
@@ -18,7 +18,7 @@ from revision_statistics import cluster_difference, cluster_ratio  # noqa: E402
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 MAIN = ROOT / "results" / "revision8" / "open_review_v3.jsonl"
 REB = ROOT / "results" / "rebuttal"
-OUT = ROOT / "manuscript" / "sections"
+OUT = ROOT / "build" / "tables"
 MODELS = [("claude-opus-5", "Claude Opus 5"), ("gpt-5.6-sol", "GPT-5.6 Sol"), ("gpt-5.6-terra", "GPT-5.6 Terra"),
           ("gpt-5.6-luna", "GPT-5.6 Luna"), ("glm-5.3", "GLM-5.3"), ("glm-5.3-flash", "GLM-5.3-Flash"),
           ("qwen3.5-35b-a3b", "Qwen3.5-35B-A3B"), ("deepseek-v4.1-flash", "DeepSeek-V4.1-Flash")]

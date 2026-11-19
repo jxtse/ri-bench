@@ -5,7 +5,7 @@ Reads every `runs/agentic/full-*/ledger.jsonl` (the eight models on the full cas
 per model, and prices it at the public list prices below. The judge (Gemini 3.8 Flash) is priced from the
 `usage` block of every `score.json`. The figures are estimates from reported usage at list price, not
 invoices: the Anthropic endpoint reported no cache hits, so Claude is priced entirely at the uncached
-input rate, and DeepSeek is priced at its peak rate. Writes `manuscript/sections/table_cost.tex` and
+input rate, and DeepSeek is priced at its peak rate. Writes `build/tables/table_cost.tex` and
 prints the totals used in the Setup paragraph.
 """
 import collections
@@ -108,7 +108,7 @@ ti = sum(full[k]["input"] + full[k]["cached"] for k in EIGHT) + hv["input"] + hv
 to = sum(full[k]["output"] for k in EIGHT) + hv["output"] + jd["output"]
 lines.append(f"Total & {tc:,} & {m(ti)} & {m(to)} & {total:,.0f} \\\\")
 lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}"]
-out = os.path.join(R, "manuscript", "sections", "table_cost.tex")
+out = os.path.join(R, "build", "tables", "table_cost.tex")
 with open(out, "w") as f:
     f.write("\n".join(lines) + "\n")
 print("wrote", out)

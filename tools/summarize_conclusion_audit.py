@@ -67,5 +67,5 @@ def main():
  if eligible:
   t.append(f"For the {len(eligible_cases)} inquiries classified as committee-reference, {agreed} of {len(eligible)} selected reports are labeled agreeing and {unresolved} remain unresolved. Assigning every unresolved label to non-agreement or agreement gives bounds [{100*agreed/len(eligible):.1f}, {100*(agreed+unresolved)/len(eligible):.1f}]\\%; these are missing-label bounds, not confidence limits, and remain conditional on the source classification.")
  t.append(r'An initial audit that accepted partial JSON was stopped and excluded; 772 result records are retained as invalid diagnostic history. This is not complete API-call accounting, because early pilot failures were not all preserved. The revised audit retains all 348 attempts. Technical failures are missing audit labels, not subject behavior.')
- (R/'manuscript/sections/app_conclusion_audit.tex').write_text('\n'.join(t)+'\n')
+ (R/'build/tables/app_conclusion_audit.tex').write_text('\n'.join(t)+'\n')
 if __name__=='__main__':main()

@@ -5,7 +5,7 @@ Same row schema and filters as tools/export_results.py (which stays frozen at th
 the four DeepSeek lanes are exported into a separate directory with their own RUNS_INDEX.json. The frozen
 seven-model files in results/*.jsonl are never touched. Unlike the frozen exporter, a shortfall against the
 planned counts does not abort: it is recorded per scenario (planned, exported, excluded by reason) so that the
-manuscript can disclose it. Deterministic; no model calls.
+paper can disclose it. Deterministic; no model calls.
 Usage: .venv/bin/python tools/export_results_deepseek.py
 """
 import glob, hashlib, json, os, sys

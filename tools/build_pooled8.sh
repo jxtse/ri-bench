@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build the eight-model pooled view used by the manuscript's pooled numbers.
+# Build the eight-model pooled view used by the paper's pooled numbers.
 # results/pooled8/<scenario>.jsonl = frozen seven-model export (results/*.jsonl, untouched)
 #                                   + supplementary DeepSeek-V4.1-Flash export (results/supplement/deepseek/*.jsonl).
 # Then recompute summary.json for that view with the unchanged summarizer. Deterministic; no model calls.

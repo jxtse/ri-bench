@@ -3,7 +3,7 @@ Parliament witness slots, written as one LaTeX table for the appendix.
 
 Pairs are formed within (case, model, arm) for Court and within
 (inquiry, model, witness) for Parliament, from results/*.jsonl.
-Usage: python tools/make_transition_table.py > manuscript/sections/table_transitions.tex
+Usage: python tools/make_transition_table.py > build/tables/table_transitions.tex
 """
 import collections
 import json

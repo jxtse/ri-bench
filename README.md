@@ -1,6 +1,6 @@
 # RI-Bench
 
-Code, results and paper source for **"Do Senior Agents Do Their Job? Measuring Role Integrity in How LLM Agents Use
+Code and results for **"Do Senior Agents Do Their Job? Measuring Role Integrity in How LLM Agents Use
 Subordinate Material"** (Xie, Zhang, Jiang, Liu, Yang and Su, 2026).
 
 Multi-agent LLM systems hand long tasks to subagents whose reports a senior agent turns into the final answer. RI-Bench
@@ -20,7 +20,6 @@ DeepSeek-V4.1-Flash), two prompts (Vanilla, Obligation), 12,392 episodes.
 
 - **Case corpus:** [huggingface.co/datasets/jxtse/RI-Bench](https://huggingface.co/datasets/jxtse/RI-Bench)
   (1,636 cases, CC BY-NC 4.0)
-- **Paper:** `manuscript/` (LaTeX source)
 
 ## Quick start
 
@@ -30,9 +29,8 @@ Requires [uv](https://docs.astral.sh/uv/) and Python ≥ 3.11.
 make bootstrap   # .venv with the test and figure extras
 make test        # unit tests, no model calls (4 skip until `make cases`)
 make summary     # recompute results/summary.json and results/revision8/summary.json
-make tables      # regenerate the paper's tables from results/
-make figures     # redraw the result figures
-make paper       # compile the paper (needs a TeX installation with latexmk)
+make tables      # regenerate the paper's tables into build/tables/
+make figures     # redraw the result figures into build/figures/
 ```
 
 `make summary`, `make tables` and `make figures` read only the frozen per-episode exports in `results/` and make no
@@ -53,7 +51,6 @@ results/               frozen per-episode exports and summaries (see results/REA
 data/interventions/    generated and verified Court errors and Parliament limitations, one record per case
 data/generated_reviews/ the generated OpenReview reviews for every design and arm
 data/human_annotation/ human calibration of the semantic scorer (3 annotators, anonymized)
-manuscript/            paper source and figure script
 ```
 
 ### Results views

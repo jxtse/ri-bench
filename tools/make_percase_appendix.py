@@ -336,7 +336,7 @@ def main():
     export("per_case", cases)
     export("trace_statistics", trace)
     export("trace_statistics_raw", raw)
-    (ROOT / "manuscript" / "sections" / "app_percase.tex").write_text(render_compact_appendix(cases, trace))
+    (ROOT / "build" / "tables" / "app_percase.tex").write_text(render_compact_appendix(cases, trace))
     print(f"Exported {len(cases)} cases, {len(trace)} scenario/model/role groups, {len(raw)} role traces")
 
 

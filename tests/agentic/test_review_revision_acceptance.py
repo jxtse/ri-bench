@@ -49,7 +49,7 @@ def test_scoring_accounting_denominators_and_distinct_matrices():
  assert sum(r['parliament_verified'] for r in s['by_model_condition'])==3094
 
 def test_every_case_appears_once_in_printed_appendix():
- f=R/'manuscript/sections/app_percase.tex'
+ f=R/'build/tables/app_percase.tex'
  if not f.exists():pytest.skip('per-case appendix is generated on demand by tools/make_percase_appendix.py')
  cases=json.loads((R/'results/per_case.json').read_text());text=f.read_text()
  assert len(cases)==477
@@ -62,15 +62,6 @@ def test_exact_prompt_audit_has_all_selected_roles():
  assert p['n']==len(p['checked'])==76
  assert {x['role'] for x in p['checked']}=={'area_chair','program_chair','judge','chair'}
  assert {x['condition'] for x in p['checked']}=={'vanilla','obligation'}
-
-def test_no_review_response_placeholders_or_overclaim_residue():
- files=[R/'manuscript/main.tex']+list((R/'manuscript/sections').glob('*.tex'))
- text='\n'.join(f.read_text() for f in files)
- assert '\\todo{Human' not in text and '\\todo{Per-case' not in text
- for phrase in ['structural dissociation','Verifying is met','Reading does not buy weighing','The strongest model weighs by default','only the votes reversed','wrong decision by construction']:
-  assert phrase not in text
- bib=(R/'manuscript/references.bib').read_text()
- assert '@article{qu2026mislead' in bib and '@article{hu2026mislead' not in bib
 
 def test_completed_conclusion_audit_accounts_for_every_selected_report():
  s=json.loads((R/'results/parliament_conclusion_audit_summary.json').read_text())

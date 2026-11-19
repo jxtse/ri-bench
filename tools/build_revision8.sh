@@ -6,6 +6,7 @@
 # Then summary.json, the paper tables and figures. Deterministic; no model calls.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+mkdir -p build/tables build/figures
 PY="env -u PYTHONPATH -u VIRTUAL_ENV .venv/bin/python"
 OUT=results/revision8; mkdir -p "$OUT"
 for s in court open_review_v2 parliament; do cp "results/pooled8/$s.jsonl" "$OUT/$s.jsonl"; done
@@ -35,6 +36,6 @@ PYEOF
 export RIBENCH_RESULTS_DIR="$PWD/$OUT"
 $PY tools/summarize_results.py
 $PY tools/make_revision_tables.py
-$PY tools/make_ri_table.py > manuscript/sections/table_ri.tex
+$PY tools/make_ri_table.py > build/tables/table_ri.tex
 $PY tools/make_rebuttal_tables.py > /dev/null
-$PY manuscript/figures/make_results_figures.py
+$PY tools/make_figures.py

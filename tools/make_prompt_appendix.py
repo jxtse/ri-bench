@@ -13,7 +13,7 @@ def main():
   out += [r'\paragraph{'+title+r'.}',r'\begin{quote}\small',r'\textbf{System role:} '+esc(p.ROLES[role])+r'\par',r'\textbf{Obligation-only addition:}\par']
   for line in p.DUTIES[role].splitlines():out.append(esc(line)+r'\par')
   out += [r'\textbf{User task:} '+esc(p.TASKS[role])+r'\par',r'\textbf{Output format:} '+esc(p.OUTPUTS[role]),r'\end{quote}']
- (R/'manuscript/sections/app_prompts.tex').write_text('\n'.join(out)+'\n')
+ (R/'build/tables/app_prompts.tex').write_text('\n'.join(out)+'\n')
  checked=[]
  for scenario in ['court','open_review_v2','open_review_v3','parliament']:
   rows=[json.loads(l) for l in (R/f'results/{scenario}.jsonl').read_text().splitlines()];seen=set()

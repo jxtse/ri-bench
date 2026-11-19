@@ -43,7 +43,7 @@ time can include provider waiting and is not isolated inference time.
 
 - The route `foundry-a` served Sol under the Terra identifier (`foundry-a/gpt-5.6-terra`, 609 episodes); those episodes are excluded, and Terra was rerun on route `foundry-b`, which returns its identity.
 - TokenDance Qwen batches (404 valid + 407 failed attempts) are excluded; Qwen3.5-35B-A3B results come from OpenRouter pinned to Alibaba.
-- Episodes with a provider error, empty output, unsettled tool invocation or out-of-workspace access were archived and rerun; the archived attempts remain in `retried_episodes/` and are counted in the manuscript's infrastructure disclosures, not here.
+- Episodes with a provider error, empty output, unsettled tool invocation or out-of-workspace access were archived and rerun; the archived attempts remain in `retried_episodes/` and are counted in the paper's infrastructure disclosures, not here.
 - Four Parliament inquiries whose material exceeded the agents' context budget were excluded before analysis (`configs/agentic/parliament_exclusions.json`).
 
 ## Regenerating
@@ -51,7 +51,7 @@ time can include provider waiting and is not isolated inference time.
 ```
 .venv/bin/python tools/export_results.py      # needs the raw run directories under runs/agentic (not included); validates counts before touching results/
 .venv/bin/python tools/summarize_results.py   # needs only results/*.jsonl
-.venv/bin/python manuscript/figures/make_results_figures.py
+RIBENCH_RESULTS_DIR=$PWD/results/revision8 .venv/bin/python tools/make_figures.py
 ```
 
 ## Additional analyses

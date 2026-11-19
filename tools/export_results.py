@@ -3,7 +3,7 @@
 
 One row per completed episode (all role statuses complete, model identity matches the plan, not a retired
 or duplicate lane). Columns are documented in results/README.md. Also writes results/summary.json with the
-numbers used in the manuscript tables and figures, and results/RUNS_INDEX.json mapping each row back to
+numbers used in the paper tables and figures, and results/RUNS_INDEX.json mapping each row back to
 its source batch. Deterministic; no model calls. Usage: .venv/bin/python tools/export_results.py
 """
 import glob, hashlib, json, os, sys

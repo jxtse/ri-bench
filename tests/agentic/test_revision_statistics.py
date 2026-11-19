@@ -157,7 +157,7 @@ def test_frozen_valid_pair_counts_and_all_477_cases():
 def test_figures_use_summary_intervals_and_exact_numerators():
     # the paper's figures are drawn from the eight-model revision view (tools/build_revision8.sh)
     summary = json.loads((ROOT / "results" / "revision8" / "summary.json").read_text())
-    figures = json.loads((ROOT / "manuscript" / "figures" / "fig_numbers.json").read_text())
+    figures = json.loads((ROOT / "results" / "revision8" / "fig_numbers.json").read_text())
     for name, scenario, metric in (("follow_adversarial_majority", "open_review_v3", "X/following"),
                                    ("court_adopted", "court", "both/ADOPTED"),
                                    ("parliament_limitation_loss", "parliament", "both/ql")):

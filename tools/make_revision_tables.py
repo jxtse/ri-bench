@@ -35,7 +35,7 @@ def make_review(cc):
  for m,cells,_ in rows:
   if m=='pooled':t.append(r'\midrule')
   t.append(' & '.join(cells)+r' \\')
- t += [r'\bottomrule\end{tabular}}\end{table}'];(R/'manuscript/sections/table_open_review_v3.tex').write_text('\n'.join(t)+'\n')
+ t += [r'\bottomrule\end{tabular}}\end{table}'];(R/'build/tables/table_open_review_v3.tex').write_text('\n'.join(t)+'\n')
 
 def main():
  s=json.loads(SUMMARY.read_text());cc=s['case_cluster']
@@ -53,7 +53,7 @@ def main():
  for model,cells,_ in rows:
   if model=='pooled':t.append(r'\midrule')
   t.append(' & '.join(cells)+r' \\')
- t += [r'\bottomrule\end{tabular}}\end{table}'];(R/'manuscript/sections/table_parliament.tex').write_text('\n'.join(t)+'\n')
+ t += [r'\bottomrule\end{tabular}}\end{table}'];(R/'build/tables/table_parliament.tex').write_text('\n'.join(t)+'\n')
  t=[r'\section{Case-cluster uncertainty}\label{app:statistics}',r"All intervals in the paper resample cases. The unit of resampling is the paper, court case or inquiry, retaining every model, arm, prompt and witness attached to it. We draw 10,000 samples with replacement using NumPy's multinomial case weights, seed 20260914, and percentile 95\% intervals (linear quantiles). Models are treated as a fixed evaluated set, not sampled from a model population. Counts are pooled within a resample before ratios are computed. Zero-citation cases remain in the sampling frame; all-zero-denominator draws are undefined, excluded rather than set to zero, and counted in the machine-readable summary. Undefined decisions are missing, not negative outcomes. Between-condition conditional-rate differences can involve different cited subsets; same-claim improvements cannot be inferred from them.",r'Pooled episode-level McNemar values treat repeated papers as independent and are not used for inference. No bootstrap-tail probabilities are presented as calibrated p values. Intervals are not multiplicity-adjusted; model-level contrasts and post hoc source checks are descriptive, and the finite set of cases limits generalization.',r'\begin{table}[htbp]\centering\small',r'\caption{Pooled endpoints with case-cluster intervals. Court pools both arms and prompts; OpenReview and Parliament include prompt-specific estimates, with Parliament also pooled across prompts. The denominators are rulings, extractable decisions, or cited witness claims as indicated, not independent cases.}',r'\begin{tabular}{lrrl}\toprule Endpoint & Numerator / denominator & Cases & Rate [95\% CI] \\\midrule']
  rows=[('Court adoption (all)','court','all','both/ADOPTED'),('OpenReview following (V)','open_review_v3','vanilla','X/following'),('OpenReview following (O)','open_review_v3','obligation','X/following'),('Parliament loss (V)','parliament','vanilla','both/ql'),('Parliament loss (O)','parliament','obligation','both/ql'),('Parliament loss (all)','parliament','all','both/ql')]
  for name,scenario,cond,key in rows:
@@ -69,7 +69,7 @@ def main():
  for name,scen,key in es:
   x=cc[scen]['pooled']['effects'][key];n=str(x.get('n')) if 'n' in x else str(x['left']['n'])+' / '+str(x['right']['n']);t.append(f'{name} & {n} & {fmt(x["estimate"])} {ci(x)}'+r' \\')
  t.extend([r'\bottomrule\end{tabular}\end{table}'])
- (R/'manuscript/sections/app_statistics.tex').write_text('\n'.join(t)+'\n')
+ (R/'build/tables/app_statistics.tex').write_text('\n'.join(t)+'\n')
  make_review(cc)
  print('generated main tables and statistics appendix from canonical summary')
 if __name__=='__main__':main()

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Results figures for the RI-Bench manuscript. Reads results/*.jsonl (tools/export_results.py), writes
-manuscript/figures/fig_results_overview.pdf and fig_process.pdf plus a JSON of every plotted number.
+"""Result figures of the RI-Bench paper. Reads results/*.jsonl (tools/export_results.py), writes
+build/figures/fig_results_overview.pdf and fig_process.pdf, and fig_numbers.json (every plotted number) into the results view.
 Deterministic; no model calls."""
 import glob, json, os, statistics, collections, math
 import matplotlib
@@ -8,8 +8,9 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-R = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-OUT = os.path.join(R, "manuscript", "figures")
+R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT = os.path.join(R, "build", "figures")
+os.makedirs(OUT, exist_ok=True)
 ORDER = ["claude-opus-5", "gpt-5.6-sol", "gpt-5.6-terra", "gpt-5.6-luna", "glm-5.3", "glm-5.3-flash", "qwen3.5-35b-a3b"]
 NAME = {"claude-opus-5": "Claude Opus 5", "gpt-5.6-sol": "GPT-5.6 Sol", "gpt-5.6-terra": "GPT-5.6 Terra", "gpt-5.6-luna": "GPT-5.6 Luna",
         "glm-5.3": "GLM-5.3", "glm-5.3-flash": "GLM-5.3-Flash", "qwen3.5-35b-a3b": "Qwen3.5-35B-A3B"}
@@ -221,5 +222,5 @@ ax.set_title("(c) Tool-volume vs.\nmajority following", loc="left", fontsize=8);
 ax.grid(color="#eeeeee", lw=0.6); ax.set_axisbelow(True)
 fig.savefig(os.path.join(OUT, "fig_process.pdf")); plt.close(fig)
 
-json.dump(numbers, open(os.path.join(OUT, "fig_numbers.json"), "w"), indent=1)
+json.dump(numbers, open(os.path.join(VIEW or os.path.join(R, "results"), "fig_numbers.json"), "w"), indent=1)
 print("wrote", OUT)

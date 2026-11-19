@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compute the manuscript's headline numbers from results/*.jsonl and write results/summary.json.
+"""Compute the paper's headline numbers from results/*.jsonl and write results/summary.json.
 Every number in the paper's tables should be derivable from this file. Deterministic. Usage:
 .venv/bin/python tools/summarize_results.py"""
 import collections, json, math, os
@@ -171,7 +171,7 @@ for m in ORDER:
                                        "files_read_median": sorted(a["files_read"] for a in ac)[len(ac) // 2], "tool_calls_median": sorted(a["tool_calls"] for a in ac)[len(ac) // 2],
                                        "output_plus_reasoning_tokens_median": outt[len(outt) // 2], "output_plus_reasoning_tokens_iqr": [outt[len(outt) // 4], outt[3 * len(outt) // 4]]}
 
-# all-model, all-condition pooled headline rates with case-cluster intervals (as quoted in the manuscript)
+# all-model, all-condition pooled headline rates with case-cluster intervals (as quoted in the paper)
 out["headline"] = {
     "court_adoption_all": pooled_rate([(r["case_id"], int(r["final"] == "ADOPTED")) for r in court]),
     "parliament_limitation_loss_all": pooled_rate([(r["case_id"], int(r["final"][s_] == "CITED_WITHOUT_QUALIFIER")) for r in parl for s_ in ("aligned", "opposed") if r["final"][s_] != "OMITTED"]),

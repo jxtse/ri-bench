@@ -27,15 +27,6 @@ node_modules/
 
 # Build outputs (not the source package src/ribench_agentic/build/)
 /build/
-manuscript/*.aux
-manuscript/*.log
-manuscript/*.bbl
-manuscript/*.blg
-manuscript/*.out
-manuscript/*.fls
-manuscript/*.fdb_latexmk
-manuscript/*.synctex.gz
-manuscript/main.pdf
 
 # Downloaded or regenerated data
 /data/cases/

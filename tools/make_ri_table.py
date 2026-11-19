@@ -11,7 +11,7 @@ RI intervals: resample cases within each scenario independently (the
 scenarios share no cases), pool counts within a resample, recompute the
 three complements and their mean. 10,000 draws, seed 20260914, percentile
 interval, matching the appendix statistics.
-Usage: python tools/make_ri_table.py > manuscript/sections/table_ri.tex
+Usage: python tools/make_ri_table.py > build/tables/table_ri.tex
 """
 import collections
 import json
@@ -167,7 +167,7 @@ def main():
     print(r"\bottomrule\end{tabular}")
     print(r"\end{table}")
     # appendix companion with intervals
-    with open(ROOT / "manuscript/sections/table_ri_ci.tex", "w") as f:
+    with open(ROOT / "build/tables/table_ri_ci.tex", "w") as f:
         f.write(r"\begin{table}[ht]\centering\small" + "\n")
         f.write(r"\caption{Role integrity with 95\% case-cluster intervals." + "" + r" Cases are resampled within each scenario independently, counts are pooled within a resample and the three complements averaged, with the draw count, seed and percentile rule of Appendix~\ref{app:statistics}. Vanilla and Obligation values come from different episodes and are not a paired contrast.}" + "\n")
         f.write(r"\label{tab:ri-ci}" + "\n")
