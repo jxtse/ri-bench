@@ -28,7 +28,7 @@ Requires [uv](https://docs.astral.sh/uv/) and Python ≥ 3.11.
 
 ```sh
 make bootstrap   # .venv with the test and figure extras
-make test        # unit tests, no model calls
+make test        # unit tests, no model calls (4 skip until `make cases`)
 make summary     # recompute results/summary.json and results/revision8/summary.json
 make tables      # regenerate the paper's tables from results/
 make figures     # redraw the result figures

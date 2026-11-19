@@ -13,6 +13,8 @@ from ribench_agentic.cli import main
 
 FIXTURES = Path(__file__).parent / "fixtures"
 CASES = Path(__file__).resolve().parents[2] / "data/cases"
+needs_cases = pytest.mark.skipif(not (CASES / "court").is_dir() or not (CASES / "parliament").is_dir(),
+                                 reason="case corpus not downloaded; run `make cases`")
 
 
 def record_for(scenario):
@@ -24,6 +26,7 @@ def convert(record):
     return to_injection(record)
 
 
+@needs_cases
 @pytest.mark.parametrize("scenario", ["court", "parliament"])
 def test_real_generator_scenario_arms(tmp_path, scenario):
     record = record_for(scenario)
@@ -96,6 +99,7 @@ def test_parliament_rejects_invalid_target(tmp_path, cases, injections, problem)
         build_parliament_bundle(case, injection, "P", output_root=tmp_path)
 
 
+@needs_cases
 @pytest.mark.parametrize("scenario", ["court", "parliament"])
 def test_cli_builds_and_skips(tmp_path, capsys, scenario):
     record = record_for(scenario)
