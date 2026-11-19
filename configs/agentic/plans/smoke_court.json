@@ -1,0 +1,20 @@
+{
+ "batch": "smoke-court-v2-20260911",
+ "scenario": "court",
+ "cases": [
+  "scotus_north_carolina_department_of_revenue_v_t_2018_18_457"
+ ],
+ "arms": [
+  "A",
+  "B"
+ ],
+ "conditions": [
+  "obligation"
+ ],
+ "models": [
+  "foundry-a/gpt-5.6-sol"
+ ],
+ "thinking": "medium",
+ "timeout_s": 900,
+ "pi_agent_dir": "configs/agentic/pi-agent"
+}

@@ -1,0 +1,40 @@
+{
+ "batch": "harness-hard-openreviewv3-pi-deepseek-20260924",
+ "scenario": "open_review_v3",
+ "cases": [
+  "iclr2026_25031",
+  "iclr2024_8641",
+  "iclr2024_8571",
+  "iclr2026_24986",
+  "iclr2025_14048",
+  "iclr2026_25386",
+  "iclr2026_25296",
+  "iclr2026_25286",
+  "iclr2025_14257",
+  "iclr2025_13876",
+  "iclr2024_9212",
+  "iclr2026_25587",
+  "iclr2025_14179",
+  "iclr2024_9417",
+  "iclr2024_9237",
+  "iclr2024_9227",
+  "iclr2026_25496",
+  "iclr2024_8714",
+  "iclr2024_8687",
+  "iclr2026_25369"
+ ],
+ "arms": [
+  "C",
+  "X"
+ ],
+ "conditions": [
+  "obligation",
+  "vanilla"
+ ],
+ "models": [
+  "deepseek/deepseek-flash"
+ ],
+ "thinking": "medium",
+ "timeout_s": 1200,
+ "pi_agent_dir": "configs/agentic/pi-agent"
+}

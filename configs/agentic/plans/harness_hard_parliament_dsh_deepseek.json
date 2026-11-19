@@ -1,0 +1,40 @@
+{
+ "batch": "harness-hard-parliament-dsh-deepseek-20260924",
+ "scenario": "parliament",
+ "cases": [
+  "parl_365_1215",
+  "parl_365_9177",
+  "parl_164_302",
+  "parl_62_1535",
+  "parl_136_682",
+  "parl_17_1623",
+  "parl_158_7809",
+  "parl_15_1035",
+  "parl_158_96",
+  "parl_158_7239",
+  "parl_158_6876",
+  "parl_83_6865",
+  "parl_203_234",
+  "parl_164_1393",
+  "parl_52_1391",
+  "parl_153_900",
+  "parl_328_320",
+  "parl_162_8990",
+  "parl_102_1690",
+  "parl_136_8661"
+ ],
+ "arms": [
+  "P"
+ ],
+ "conditions": [
+  "obligation",
+  "vanilla"
+ ],
+ "models": [
+  "deepseek/deepseek-flash"
+ ],
+ "thinking": "medium",
+ "timeout_s": 1200,
+ "pi_agent_dir": "configs/agentic/pi-agent",
+ "harness": "dsh"
+}

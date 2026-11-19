@@ -1,0 +1,20 @@
+{
+ "batch": "smoke-dsh-deepseek-court-20260924",
+ "scenario": "court",
+ "cases": [
+  "scotus_north_carolina_department_of_revenue_v_t_2018_18_457"
+ ],
+ "arms": [
+  "A"
+ ],
+ "conditions": [
+  "vanilla"
+ ],
+ "models": [
+  "deepseek/deepseek-flash"
+ ],
+ "thinking": "medium",
+ "timeout_s": 1200,
+ "pi_agent_dir": "configs/agentic/pi-agent",
+ "harness": "dsh"
+}

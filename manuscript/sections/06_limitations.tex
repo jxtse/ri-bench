@@ -1,0 +1,38 @@
+\section{Limitations and conclusion}\label{sec:limitations}
+
+\ribench{} covers three tasks rather than role integrity
+exhaustively. Court and Parliament use fixed subordinate material
+rather than interacting agents, and matched non-hierarchical controls
+are absent, so the results do not isolate hierarchy as a cause.
+\rev{OpenReview has two tiers but no exchange between them, so
+clarification, feedback and iterative revision, which interactive
+hierarchies depend on, are not tested.}
+OpenReview's constructed-vote design jointly changes scores, stance,
+and specificity\rev{; the paper-only, score-free, count-balanced and
+ratio controls of \S\ref{sec:or} separate these, but their newly
+generated reviews were checked mechanically rather than by blind rating}. Low Court error adoption does not distinguish record-based
+verification from prior knowledge or establish robustness to errors
+of legal reasoning. Parliament measures loss of both limitations only
+among cited claims, not complete evidence preservation.
+
+RI equally weights the avoidance of three specified failures, not
+verified fulfillment of all obligations. Its interpretation depends
+on the selected tasks, endpoints, and weights, and cross-scenario
+differences may also reflect document length and task difficulty.
+Court and Parliament scoring relies on one LLM judge with rule-based
+fallback. Human validation uses three annotators
+on stratified samples, so agreement is not a population accuracy
+estimate, and the annotators themselves agree only slightly in Court and
+fairly in Parliament. Capability comparisons involve few models, and the index entries are not matched to
+our reasoning settings, so differing rankings do not show
+independence from capability.
+
+We introduce \ribench{} to evaluate role integrity through obligations
+governing how senior agents handle subordinate material.
+Across the evaluated models, senior agents rarely adopt a planted
+procedural error but often follow generic review majorities or drop
+witnesses' stated limitations. The tested obligation prompts mitigate
+some failures without eliminating them and also change control
+behavior and citation selection. These findings motivate direct,
+obligation-specific evaluation of role integrity rather than
+inferring it from general capability or explicit role instructions.

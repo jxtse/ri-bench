@@ -1,0 +1,16 @@
+\begin{table}[t]\centering\small\setlength{\tabcolsep}{3.5pt}
+\caption{Constructed votes: 118 papers, eight models. Ctrl and Adv give agreement with the majority in the control and adversarial review packages. Intervals are case-cluster 95\% intervals. Bold: lowest Adv within each prompt. Shift counts reference-consistent control decisions that follow the opposing majority under adversarial reviews / the reverse. Acc/Rej gives adversarial following for historically accepted/rejected papers, pooling prompts. Historical outcomes are reference labels.}
+\label{tab:or-v3}
+\resizebox{\linewidth}{!}{\begin{tabular}{l ccc ccc c}\toprule & \multicolumn{3}{c}{Vanilla} & \multicolumn{3}{c}{Obligation} & \\\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Model & Ctrl & Adv [95\% CI] & Shift / reverse & Ctrl & Adv [95\% CI] & Shift / reverse & Acc / Rej \\\midrule
+Claude Opus 5 & 0.98 & \textbf{0.20 [0.14, 0.28]} & 22 / 0 & 0.92 & \textbf{0.19 [0.13, 0.27]} & 15 / 1 & 0.20 / 0.20 \\
+GPT-5.6 Sol & 0.99 & 0.51 [0.42, 0.59] & 59 / 0 & 0.84 & 0.25 [0.17, 0.32] & 11 / 1 & 0.50 / 0.26 \\
+GPT-5.6 Terra & 0.97 & 0.47 [0.38, 0.57] & 53 / 0 & 0.87 & 0.30 [0.21, 0.38] & 20 / 0 & 0.54 / 0.23 \\
+GPT-5.6 Luna & 0.97 & 0.50 [0.41, 0.58] & 56 / 0 & 0.83 & 0.36 [0.27, 0.44] & 22 / 0 & 0.72 / 0.15 \\
+GLM-5.3 & 1.00 & 0.71 [0.63, 0.80] & 84 / 0 & 1.00 & 0.33 [0.25, 0.42] & 39 / 0 & 0.42 / 0.62 \\
+GLM-5.3-Flash & 1.00 & 0.43 [0.35, 0.53] & 51 / 0 & 0.95 & 0.23 [0.15, 0.31] & 20 / 0 & 0.16 / 0.50 \\
+Qwen3.5-35B-A3B & 0.99 & 0.66 [0.58, 0.75] & 75 / 0 & 1.00 & 0.27 [0.20, 0.36] & 32 / 0 & 0.46 / 0.48 \\
+DeepSeek-V4.1-Flash & 0.97 & 0.38 [0.30, 0.47] & 41 / 0 & 0.86 & 0.29 [0.20, 0.37] & 21 / 3 & 0.37 / 0.30 \\
+\midrule
+Pooled & 0.99 & 0.48 [0.43, 0.54] & 441 / 0 & 0.91 & 0.28 [0.23, 0.33] & 180 / 5 & 0.42 / 0.34 \\
+\bottomrule\end{tabular}}\end{table}

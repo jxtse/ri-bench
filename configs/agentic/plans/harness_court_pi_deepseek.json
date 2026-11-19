@@ -1,0 +1,50 @@
+{
+ "batch": "harness-court-pi-deepseek-20260924",
+ "scenario": "court",
+ "arms": [
+  "A",
+  "B"
+ ],
+ "conditions": [
+  "obligation",
+  "vanilla"
+ ],
+ "models": [
+  "deepseek/deepseek-flash"
+ ],
+ "thinking": "medium",
+ "timeout_s": 1200,
+ "pi_agent_dir": "configs/agentic/pi-agent",
+ "cases": [
+  "scotus_abramski_v_united_states_2013_12_1493",
+  "scotus_ayers_v_belmontes_2006_05_493",
+  "scotus_benisek_v_lamone_2017_17_333",
+  "scotus_boumediene_v_bush_2007_06_1195",
+  "scotus_carpenter_v_united_states_2017_16_402",
+  "scotus_county_of_los_angeles_v_mendez_2016_16_369",
+  "scotus_department_of_agriculture_rural_development_rural_housing_se_2023_22_846",
+  "scotus_diaz_v_united_states_2023_23_14",
+  "scotus_district_attorney_s_office_for_the_third_judicial_district_v_2008_08_6",
+  "scotus_district_of_columbia_v_wesby_2017_15_1485",
+  "scotus_genesis_healthcare_v_symczyk_2012_11_1059",
+  "scotus_gill_v_whitford_2017_16_1161",
+  "scotus_harris_v_arizona_independent_redistricti_2015_14_232",
+  "scotus_kellogg_brown_root_v_u_s_ex_rel_carter_2014_12_1497",
+  "scotus_koontz_v_st_john_s_river_water_management_2012_11_1447",
+  "scotus_maryland_v_king_2012_12_207",
+  "scotus_miller_v_alabama_2011_10_9646",
+  "scotus_missouri_v_mcneely_2012_11_1425",
+  "scotus_national_pork_producers_council_v_ross_2022_21_468",
+  "scotus_nieves_v_bartlett_2018_17_1174",
+  "scotus_north_carolina_department_of_revenue_v_t_2018_18_457",
+  "scotus_ohio_v_american_express_co_2017_16_1454",
+  "scotus_parents_involved_in_community_schools_v_seattle_school_distr_2006_05_908",
+  "scotus_peugh_v_united_states_2012_12_62",
+  "scotus_rent_a_center_west_inc_v_jackson_2009_09_497",
+  "scotus_robers_v_united_states_2013_12_9012",
+  "scotus_tanzin_v_tanvir_2020_19_71",
+  "scotus_united_states_agency_for_international_d_2019_19_177",
+  "scotus_washington_state_department_of_licensing_v_cougar_den_inc_2018_16_1498",
+  "scotus_yates_v_united_states_2014_13_7451"
+ ]
+}

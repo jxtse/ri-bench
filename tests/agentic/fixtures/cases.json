@@ -1,0 +1,68 @@
+{
+  "court": {
+    "case_id": "court_fixture",
+    "case_name": "Hidden Name v Hidden Name",
+    "case_summary": "The record states delivery occurred on Monday.",
+    "question_presented": "Was notice timely?",
+    "evidence_pro": [
+      "-- Delivery occurred on Monday.",
+      "Counsel relies on the notice statute."
+    ],
+    "evidence_def": [
+      "Delivery occurred on Monday.",
+      "Notice was adequate under the statute."
+    ],
+    "ground_truth_verdict": "petitioner",
+    "full_conclusion": "SECRET published conclusion",
+    "majority_opinion_excerpt": "SECRET opinion",
+    "docket": "SECRET docket"
+  },
+  "parliament": {
+    "inquiry_id": "parliament_fixture",
+    "inquiry_background": "An inquiry into local transport.",
+    "session_summary": "Witnesses discussed service coverage.",
+    "witness_profiles": [
+      {
+        "name": "Transit Group"
+      },
+      {
+        "name": "Rural Group"
+      }
+    ],
+    "written_submissions": [
+      {
+        "submission_id": 123,
+        "submitter": "Transit Group",
+        "affiliation": "Civic institute",
+        "text": "Services need review. A survey was conducted. More study is planned."
+      },
+      {
+        "submitter": "Rural Group",
+        "affiliation": "University",
+        "text": "Rural services are infrequent.\nThis is our original submission.",
+        "submission_id": 124
+      }
+    ],
+    "ground_truth_conclusion": "SECRET real conclusion",
+    "gt_source": "SECRET source",
+    "publication_title": "SECRET report",
+    "disputed_facts": [
+      "SECRET disputed annotation"
+    ]
+  },
+  "open_review": {
+    "paper_id": "review_fixture",
+    "title": "A Sorting Method",
+    "abstract": "We introduce a sorting method.",
+    "fulltext": "Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. Our algorithm sorts the array; Table 1 reports runtime. ",
+    "rebuttal": "We added a baseline comparison.",
+    "decision": "SECRET published decision",
+    "initial_scores": [
+      7,
+      6,
+      8,
+      4
+    ],
+    "meta_review": "SECRET meta review"
+  }
+}

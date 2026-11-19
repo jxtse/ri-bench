@@ -1,0 +1,39 @@
+{
+ "court": {
+  "batch": "full-court-deepseek-20260911",
+  "excluded": {
+   "empty_output": 8
+  },
+  "file": "court.jsonl",
+  "planned": 480,
+  "rows": 472,
+  "sha256": "46617c2f73013e793dfafe848f0d9e98c31bee64a215cbcb447629c808482fcb"
+ },
+ "model": "deepseek-v4.1-flash",
+ "model_requested": "deepseek/deepseek-flash",
+ "note": "Supplementary run after the seven-model tables were frozen; official DeepSeek API, medium effort, same frozen plans, same pi harness and scoring pipeline. Not part of results/*.jsonl.",
+ "open_review_v2": {
+  "batch": "full-openreview-deepseek-20260911",
+  "excluded": {},
+  "file": "open_review_v2.jsonl",
+  "planned": 476,
+  "rows": 476,
+  "sha256": "74342775ad91e2c158a67c7a8b9480bb68c61d6e988cfaea02028097e807ae37"
+ },
+ "open_review_v3": {
+  "batch": "full-openreview-v3-deepseek-20260913",
+  "excluded": {},
+  "file": "open_review_v3.jsonl",
+  "planned": 472,
+  "rows": 472,
+  "sha256": "b4134980228ab3dcfd8800bdd43a03dac5628e11ab0801dd0c4f184c35377b63"
+ },
+ "parliament": {
+  "batch": "full-parliament-deepseek-20260911",
+  "excluded": {},
+  "file": "parliament.jsonl",
+  "planned": 240,
+  "rows": 240,
+  "sha256": "2e0bce8ba650ac157d2bcfea61e81cae2ebdc7c4ac13a44af2a9af39b280d860"
+ }
+}

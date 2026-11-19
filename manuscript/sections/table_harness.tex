@@ -1,0 +1,17 @@
+\begin{table}[h]\centering\small\setlength{\tabcolsep}{4pt}
+\caption{Harness variance on the hard subset: 20 cases per scenario, each model run under two harnesses with the same prompts, cases and readout. Cells give the kept-obligation fraction with the adverse count over its denominator (majority-following decisions over valid adversarial-arm decisions; adopted errors over rulings; unqualified citations over cited claims). Intervals are case-cluster 95\% intervals; Vanilla and Obligation come from different episodes.}
+\label{tab:harness}
+\begin{tabular}{l l ccc c l}\toprule
+Model, harness & Prompt & Weigh & Verify & Relay & RI & 95\% CI \\ \midrule
+GPT-5.6 Sol, \texttt{pi} & Vanilla & 0.05 (19/20) & 1.00 (0/40) & 0.27 (11/15) & 0.44 & [0.35, 0.54] \\
+GPT-5.6 Sol, \texttt{pi} & Obligation & 0.50 (10/20) & 1.00 (0/40) & 0.48 (12/23) & 0.66 & [0.55, 0.76] \\
+\addlinespace[2pt]
+GPT-5.6 Sol, \texttt{codex} & Vanilla & 0.25 (15/20) & 1.00 (0/40) & 0.15 (11/13) & 0.47 & [0.37, 0.58] \\
+GPT-5.6 Sol, \texttt{codex} & Obligation & 0.60 (8/20) & 1.00 (0/40) & 0.29 (12/17) & 0.63 & [0.53, 0.74] \\
+\addlinespace[2pt]
+DeepSeek-V4.1-Flash, \texttt{pi} & Vanilla & 0.30 (14/20) & 0.90 (3/31) & 0.29 (15/21) & 0.50 & [0.41, 0.59] \\
+DeepSeek-V4.1-Flash, \texttt{pi} & Obligation & 0.40 (12/20) & 0.88 (4/32) & 0.27 (19/26) & 0.51 & [0.42, 0.61] \\
+\addlinespace[2pt]
+DeepSeek-V4.1-Flash, \texttt{dsh} & Vanilla & 0.16 (16/19) & 0.78 (8/36) & 0.32 (17/25) & 0.42 & [0.33, 0.52] \\
+DeepSeek-V4.1-Flash, \texttt{dsh} & Obligation & 0.45 (11/20) & 0.89 (4/36) & 0.69 (10/32) & 0.68 & [0.58, 0.77] \\
+\bottomrule\end{tabular}\end{table}

@@ -1,0 +1,615 @@
+{
+ "scope": "one frozen episode per scenario/model/prompt; all subject roles in selected episodes",
+ "template_sha256": "1cc7e42bf218ad8b3f6e44342e5c3fd5a77855fd02f76da7ab4c478a9ea65c18",
+ "n": 76,
+ "checked": [
+  {
+   "scenario": "court",
+   "model": "claude-opus-5",
+   "condition": "obligation",
+   "episode_id": "042acf8cd77d963617e855f821e1dfcb66ca40f8265a27b3cd390496a2cc1f30",
+   "role": "judge",
+   "invocation_sha256": "cf3ad28b0cc24a11697505c69cbed81f9222f8a2a04b12f1660577c2f9344d36"
+  },
+  {
+   "scenario": "court",
+   "model": "claude-opus-5",
+   "condition": "vanilla",
+   "episode_id": "8e9b4ad61928eaead138c63cc75b1f4484da105ac27f2c3f1918fdd69d4f1670",
+   "role": "judge",
+   "invocation_sha256": "5f5f2666b76c4f85f71061e99ee18283fb2cada020a379123ff7a0a862403361"
+  },
+  {
+   "scenario": "court",
+   "model": "glm-5.3",
+   "condition": "obligation",
+   "episode_id": "4c598fbbceb2f0713b7ea337192a93cd8150aea56cf84fc93b714a1436db5363",
+   "role": "judge",
+   "invocation_sha256": "ab17793a24fbe110e607fb8a46198825ebde72bce82c8e98548137caafc44f7b"
+  },
+  {
+   "scenario": "court",
+   "model": "glm-5.3",
+   "condition": "vanilla",
+   "episode_id": "9e1aa9b20329933e1865da54becdd10f4ca0f6323efe3bb1c26ac232291b89f2",
+   "role": "judge",
+   "invocation_sha256": "9d3f80970755cf0f00fce63bb8c408cae2defb5d7fdb1416d914e9dc683ed3ad"
+  },
+  {
+   "scenario": "court",
+   "model": "glm-5.3-flash",
+   "condition": "obligation",
+   "episode_id": "acc28c76bd67bf524aecee0b84864372c3283900de619c426602304f1ae519dc",
+   "role": "judge",
+   "invocation_sha256": "b73e7a5d41e62b5965f97079145ab8f563fe94769cf9f02a2bd74194b4dc68be"
+  },
+  {
+   "scenario": "court",
+   "model": "glm-5.3-flash",
+   "condition": "vanilla",
+   "episode_id": "353d3d0c7cbcab80cf316b81090a7dbc147401c937bf9720ddb5ee8dac4c7d75",
+   "role": "judge",
+   "invocation_sha256": "667d378790a1172d08e975b3d1e0b48088980d63b180a8f313a1d3e1139381a0"
+  },
+  {
+   "scenario": "court",
+   "model": "gpt-5.6-luna",
+   "condition": "obligation",
+   "episode_id": "430e01c35c82e0ec52de8b5326cccc24c661c14168622c3d770cd5572b3974a1",
+   "role": "judge",
+   "invocation_sha256": "b98f078a1e47c7931324170dd73a4356d30d8650a95e170ad19b3bff37dcff4f"
+  },
+  {
+   "scenario": "court",
+   "model": "gpt-5.6-luna",
+   "condition": "vanilla",
+   "episode_id": "26e9fa5b3db78b17325c925d6cb8be3f84875961ea24a9ee30ebf8f3ff381720",
+   "role": "judge",
+   "invocation_sha256": "839209a35bb2e8f0eba34a2c477a37f26df0204b1f590c2ca3347471ef49a8e8"
+  },
+  {
+   "scenario": "court",
+   "model": "gpt-5.6-sol",
+   "condition": "obligation",
+   "episode_id": "fab8c5daab30c3ee79ae142e4a03df554da93390d930484c00940b9beca2946c",
+   "role": "judge",
+   "invocation_sha256": "9243b9600ff3f6ae010b973826001312a3639e4381c30997808b5ce57ae1cbd6"
+  },
+  {
+   "scenario": "court",
+   "model": "gpt-5.6-sol",
+   "condition": "vanilla",
+   "episode_id": "f1f8d1dcc01b59da422277b2627162a83745f5080504a85fac3e375628df9922",
+   "role": "judge",
+   "invocation_sha256": "b90bbfaff57668cc6b50cb258311d50abd557c6af73faa85b34867aab344ac68"
+  },
+  {
+   "scenario": "court",
+   "model": "gpt-5.6-terra",
+   "condition": "obligation",
+   "episode_id": "8299a40521ec63cbb9acf6c93fd377ce3cbfe8ab5ef02c907a401e78b81602b6",
+   "role": "judge",
+   "invocation_sha256": "264c710f1f074f05bad7d911ee34e6377de2533cd714d4406e7c5b5440a7065f"
+  },
+  {
+   "scenario": "court",
+   "model": "gpt-5.6-terra",
+   "condition": "vanilla",
+   "episode_id": "08b6d7ba0589d46215b1f70c85b2dad49e3d389d416a901ae82fc81a835784fc",
+   "role": "judge",
+   "invocation_sha256": "c734093543a92bfc7d3f38d01b0bbe8bd29b99dd35d12429e5593251f77c9f56"
+  },
+  {
+   "scenario": "court",
+   "model": "qwen3.5-35b-a3b",
+   "condition": "obligation",
+   "episode_id": "b77aa229ae9e3475fedcd0f79e6c5ca160eb160a4b15f5331965084b29cfd2e8",
+   "role": "judge",
+   "invocation_sha256": "468d8265e7e9dc69ec250f340a12af14b70c113ea7e0d1388577b063b0e40dc3"
+  },
+  {
+   "scenario": "court",
+   "model": "qwen3.5-35b-a3b",
+   "condition": "vanilla",
+   "episode_id": "ec6eb042ae2b3277347e5f49a1ce4953ef1337212eee3e6a589a455d7ef83336",
+   "role": "judge",
+   "invocation_sha256": "2bd5fdc40100436d5c3bd41871e4d94c39a06345df683e619255765c683afba8"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "claude-opus-5",
+   "condition": "obligation",
+   "episode_id": "f0cd017ffa29ba0a70a8731e7a53fb7c2d7fdba534cecff87a8dbd936f3a6150",
+   "role": "area_chair",
+   "invocation_sha256": "1bb10c05c4c7a0b91ea56c135b39b933472df675d0a1dcc1869e3ba809e8b665"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "claude-opus-5",
+   "condition": "obligation",
+   "episode_id": "f0cd017ffa29ba0a70a8731e7a53fb7c2d7fdba534cecff87a8dbd936f3a6150",
+   "role": "program_chair",
+   "invocation_sha256": "75315b7206ded5eedf4f709cd9ad6a809195d04fe5ce229f39337f3f9730c78c"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "claude-opus-5",
+   "condition": "vanilla",
+   "episode_id": "109c1fa3ebcf5e44e07298813a605554db82d8c4ab46e8c48bc1dbb9697b5b38",
+   "role": "area_chair",
+   "invocation_sha256": "73c14a20570ad2c58cfe5aaec1fc236f86a76bf33e6596c36aea2d38cfcf313e"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "claude-opus-5",
+   "condition": "vanilla",
+   "episode_id": "109c1fa3ebcf5e44e07298813a605554db82d8c4ab46e8c48bc1dbb9697b5b38",
+   "role": "program_chair",
+   "invocation_sha256": "c8ef56822bac6bf7cefd5763dfc32116cdfaa1ac509911a52bef2cb9bdb5211c"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "glm-5.3",
+   "condition": "obligation",
+   "episode_id": "bb2cf24da8b21a8b64121daf0d19dba594678e2b6632bd55a73715cb37bda54b",
+   "role": "area_chair",
+   "invocation_sha256": "9b0d51b57c4c31e6d280bfdeaa68101ddb0d6bfe3445686b48fda552770d9373"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "glm-5.3",
+   "condition": "obligation",
+   "episode_id": "bb2cf24da8b21a8b64121daf0d19dba594678e2b6632bd55a73715cb37bda54b",
+   "role": "program_chair",
+   "invocation_sha256": "db0d64051af6d80289ff37e4e6666b93cbf06775f3dbc880b14eaed2ef3ea303"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "glm-5.3",
+   "condition": "vanilla",
+   "episode_id": "0d09475a774ba723d302a20802e7e1d1404aa21dc55d9179e444cf2e9034fc33",
+   "role": "area_chair",
+   "invocation_sha256": "de67823698d60866debf922dde85d4d5847b8ded7a957ec413593f10b6c5c335"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "glm-5.3",
+   "condition": "vanilla",
+   "episode_id": "0d09475a774ba723d302a20802e7e1d1404aa21dc55d9179e444cf2e9034fc33",
+   "role": "program_chair",
+   "invocation_sha256": "b658d57b391d52b74441a3fa1a1e648d335cd80f020584b94d79b5febb0c4067"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "gpt-5.6-luna",
+   "condition": "obligation",
+   "episode_id": "c419c80032a8bd842209ab366a1c3d7f9dd9caea98c917fd0c7f32b4db532324",
+   "role": "area_chair",
+   "invocation_sha256": "2132ba5efd9c58b193014d556454739761d1928826300fa2cfc3cb9463945a18"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "gpt-5.6-luna",
+   "condition": "obligation",
+   "episode_id": "c419c80032a8bd842209ab366a1c3d7f9dd9caea98c917fd0c7f32b4db532324",
+   "role": "program_chair",
+   "invocation_sha256": "e9203bd64f04fca5e22519d6cb4c92b969ce1c8a4a236b79fe2a658eec8eb95b"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "gpt-5.6-luna",
+   "condition": "vanilla",
+   "episode_id": "3f684fa282fc87616bd8bc4c78efe1f5e5a7a429ebc618dca667de745bdde221",
+   "role": "area_chair",
+   "invocation_sha256": "03162d22c662a8801c50a579be00fa15acb4b7104071c78f50d33f93223f4d9b"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "gpt-5.6-luna",
+   "condition": "vanilla",
+   "episode_id": "3f684fa282fc87616bd8bc4c78efe1f5e5a7a429ebc618dca667de745bdde221",
+   "role": "program_chair",
+   "invocation_sha256": "1dcf9e4968b2b4a1b00ff320a9c472687a9d83795c898cab284233bcf79cc2f3"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "gpt-5.6-sol",
+   "condition": "obligation",
+   "episode_id": "05a9262864e160bcaece94355d05a50f9d7b8c0681c6b9dd55271297ecf9442b",
+   "role": "area_chair",
+   "invocation_sha256": "bbe2f1d6d7b2fea6101310cb1c6fdbbf6ca1688b0b49392ada887934a618e34e"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "gpt-5.6-sol",
+   "condition": "obligation",
+   "episode_id": "05a9262864e160bcaece94355d05a50f9d7b8c0681c6b9dd55271297ecf9442b",
+   "role": "program_chair",
+   "invocation_sha256": "c95d4a443ec053bc57a9e904c7b21c5ca9fb03dcdd94281af2f189a73d159308"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "gpt-5.6-sol",
+   "condition": "vanilla",
+   "episode_id": "24f0743d512ef79695486e63071577ec19c145a4e3ae1abf6d47e1f42c22c1ed",
+   "role": "area_chair",
+   "invocation_sha256": "e2c99f1adee4fe717f425e3d9b1020ae2f25ce702909df8008729b071a0e439c"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "gpt-5.6-sol",
+   "condition": "vanilla",
+   "episode_id": "24f0743d512ef79695486e63071577ec19c145a4e3ae1abf6d47e1f42c22c1ed",
+   "role": "program_chair",
+   "invocation_sha256": "674aa51b0031cc4d2d57089726cf5a97b3f02af9e0fe5db9ac1a7acb7a2d646e"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "gpt-5.6-terra",
+   "condition": "obligation",
+   "episode_id": "450319e59182c98b6055a71ce985513f916ff141f9876d9af9d308077cc2f15e",
+   "role": "area_chair",
+   "invocation_sha256": "ad4eb18b1403637b209ab01c6cf94ba08ac5791b3a90f3899442ad1578e71b87"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "gpt-5.6-terra",
+   "condition": "obligation",
+   "episode_id": "450319e59182c98b6055a71ce985513f916ff141f9876d9af9d308077cc2f15e",
+   "role": "program_chair",
+   "invocation_sha256": "2e6a06ce7792a69015e0bfa8dc33dac0731cd1e0daab5bdd14a8011a90b71350"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "gpt-5.6-terra",
+   "condition": "vanilla",
+   "episode_id": "6acb892173b1b843d02afbee551521b3231f3acfe26ca8d8b03295d9bfa7c77c",
+   "role": "area_chair",
+   "invocation_sha256": "fa3d382855bec05563f3cda4404c9a6157d9dbb4b7cfe76e9e96eddb2274df0d"
+  },
+  {
+   "scenario": "open_review_v2",
+   "model": "gpt-5.6-terra",
+   "condition": "vanilla",
+   "episode_id": "6acb892173b1b843d02afbee551521b3231f3acfe26ca8d8b03295d9bfa7c77c",
+   "role": "program_chair",
+   "invocation_sha256": "d3154dd56ab0a4624c078798bcb7e0fb9c34fe70e2da41a2c8254dc5651ee44b"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "claude-opus-5",
+   "condition": "obligation",
+   "episode_id": "be84dbdab859f1065b447dc38a240b47a792c99c21ca7d0e4493f305418ecad3",
+   "role": "area_chair",
+   "invocation_sha256": "1bb10c05c4c7a0b91ea56c135b39b933472df675d0a1dcc1869e3ba809e8b665"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "claude-opus-5",
+   "condition": "obligation",
+   "episode_id": "be84dbdab859f1065b447dc38a240b47a792c99c21ca7d0e4493f305418ecad3",
+   "role": "program_chair",
+   "invocation_sha256": "75315b7206ded5eedf4f709cd9ad6a809195d04fe5ce229f39337f3f9730c78c"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "claude-opus-5",
+   "condition": "vanilla",
+   "episode_id": "55bb7b620b417856d231689795640932a5a20c8f45df24285cb2f7ae1fa85421",
+   "role": "area_chair",
+   "invocation_sha256": "73c14a20570ad2c58cfe5aaec1fc236f86a76bf33e6596c36aea2d38cfcf313e"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "claude-opus-5",
+   "condition": "vanilla",
+   "episode_id": "55bb7b620b417856d231689795640932a5a20c8f45df24285cb2f7ae1fa85421",
+   "role": "program_chair",
+   "invocation_sha256": "c8ef56822bac6bf7cefd5763dfc32116cdfaa1ac509911a52bef2cb9bdb5211c"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "glm-5.3",
+   "condition": "obligation",
+   "episode_id": "b4b642a418b5b2835bad3795500acae246d82ed7aac3c643cd8685d40e218ada",
+   "role": "area_chair",
+   "invocation_sha256": "9b0d51b57c4c31e6d280bfdeaa68101ddb0d6bfe3445686b48fda552770d9373"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "glm-5.3",
+   "condition": "obligation",
+   "episode_id": "b4b642a418b5b2835bad3795500acae246d82ed7aac3c643cd8685d40e218ada",
+   "role": "program_chair",
+   "invocation_sha256": "db0d64051af6d80289ff37e4e6666b93cbf06775f3dbc880b14eaed2ef3ea303"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "glm-5.3",
+   "condition": "vanilla",
+   "episode_id": "67dca55861a8de60e41b8460c7b4753c17eed138acfd97ba70f04fe4bbbcdf5f",
+   "role": "area_chair",
+   "invocation_sha256": "de67823698d60866debf922dde85d4d5847b8ded7a957ec413593f10b6c5c335"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "glm-5.3",
+   "condition": "vanilla",
+   "episode_id": "67dca55861a8de60e41b8460c7b4753c17eed138acfd97ba70f04fe4bbbcdf5f",
+   "role": "program_chair",
+   "invocation_sha256": "b658d57b391d52b74441a3fa1a1e648d335cd80f020584b94d79b5febb0c4067"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "glm-5.3-flash",
+   "condition": "obligation",
+   "episode_id": "99495637afba9c65780b6848b6249870ba638566aef7f01253427db5e01fb682",
+   "role": "area_chair",
+   "invocation_sha256": "e63ca3c884f4354e29ba59b143b91257fc875c295b753748cb7e32752bf6677a"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "glm-5.3-flash",
+   "condition": "obligation",
+   "episode_id": "99495637afba9c65780b6848b6249870ba638566aef7f01253427db5e01fb682",
+   "role": "program_chair",
+   "invocation_sha256": "a4846299dc43a73567e8f8e11ba70210794a929c319d098fd470c94138ad6eee"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "glm-5.3-flash",
+   "condition": "vanilla",
+   "episode_id": "1be5bb8059d6902a27478f6e2d5195ed747c4fcce88a391b18e90606c514f683",
+   "role": "area_chair",
+   "invocation_sha256": "5e56f6aceb11ca70b9a417d3bc25935f6a5f793a38cf5b39dee09825a0c2e448"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "glm-5.3-flash",
+   "condition": "vanilla",
+   "episode_id": "1be5bb8059d6902a27478f6e2d5195ed747c4fcce88a391b18e90606c514f683",
+   "role": "program_chair",
+   "invocation_sha256": "4b0dc0bc7baf87317366d33a02e33bc3e23088f583b12b1a107d4ebf28540e98"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "gpt-5.6-luna",
+   "condition": "obligation",
+   "episode_id": "c6e9ac3da4d4318dcc7b53c952faf0f0e77efbe1cfbfdfa9f5dbafb58df84f09",
+   "role": "area_chair",
+   "invocation_sha256": "2132ba5efd9c58b193014d556454739761d1928826300fa2cfc3cb9463945a18"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "gpt-5.6-luna",
+   "condition": "obligation",
+   "episode_id": "c6e9ac3da4d4318dcc7b53c952faf0f0e77efbe1cfbfdfa9f5dbafb58df84f09",
+   "role": "program_chair",
+   "invocation_sha256": "e9203bd64f04fca5e22519d6cb4c92b969ce1c8a4a236b79fe2a658eec8eb95b"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "gpt-5.6-luna",
+   "condition": "vanilla",
+   "episode_id": "427664b61f6846cea8f917c376e84a0c7af3c8147b6d98a9cf537b569e370892",
+   "role": "area_chair",
+   "invocation_sha256": "03162d22c662a8801c50a579be00fa15acb4b7104071c78f50d33f93223f4d9b"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "gpt-5.6-luna",
+   "condition": "vanilla",
+   "episode_id": "427664b61f6846cea8f917c376e84a0c7af3c8147b6d98a9cf537b569e370892",
+   "role": "program_chair",
+   "invocation_sha256": "1dcf9e4968b2b4a1b00ff320a9c472687a9d83795c898cab284233bcf79cc2f3"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "gpt-5.6-sol",
+   "condition": "obligation",
+   "episode_id": "38e015e6383d85d07e7ff7caf52dfb9c3f76d4b01acdc6e215ae7e6f1be19405",
+   "role": "area_chair",
+   "invocation_sha256": "bbe2f1d6d7b2fea6101310cb1c6fdbbf6ca1688b0b49392ada887934a618e34e"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "gpt-5.6-sol",
+   "condition": "obligation",
+   "episode_id": "38e015e6383d85d07e7ff7caf52dfb9c3f76d4b01acdc6e215ae7e6f1be19405",
+   "role": "program_chair",
+   "invocation_sha256": "c95d4a443ec053bc57a9e904c7b21c5ca9fb03dcdd94281af2f189a73d159308"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "gpt-5.6-sol",
+   "condition": "vanilla",
+   "episode_id": "445b7f082cfc61df9ccff4c36704a26bb0b385b99144a2140327b112910b75cd",
+   "role": "area_chair",
+   "invocation_sha256": "e2c99f1adee4fe717f425e3d9b1020ae2f25ce702909df8008729b071a0e439c"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "gpt-5.6-sol",
+   "condition": "vanilla",
+   "episode_id": "445b7f082cfc61df9ccff4c36704a26bb0b385b99144a2140327b112910b75cd",
+   "role": "program_chair",
+   "invocation_sha256": "674aa51b0031cc4d2d57089726cf5a97b3f02af9e0fe5db9ac1a7acb7a2d646e"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "gpt-5.6-terra",
+   "condition": "obligation",
+   "episode_id": "17188c29b2d222cb55748348162c637b5e056a1f0eb2896d6e06d2c6a8133b10",
+   "role": "area_chair",
+   "invocation_sha256": "ad4eb18b1403637b209ab01c6cf94ba08ac5791b3a90f3899442ad1578e71b87"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "gpt-5.6-terra",
+   "condition": "obligation",
+   "episode_id": "17188c29b2d222cb55748348162c637b5e056a1f0eb2896d6e06d2c6a8133b10",
+   "role": "program_chair",
+   "invocation_sha256": "2e6a06ce7792a69015e0bfa8dc33dac0731cd1e0daab5bdd14a8011a90b71350"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "gpt-5.6-terra",
+   "condition": "vanilla",
+   "episode_id": "4902396203b42fbd343593526e5faea5b8de092c962895c69e30354e334e0db4",
+   "role": "area_chair",
+   "invocation_sha256": "fa3d382855bec05563f3cda4404c9a6157d9dbb4b7cfe76e9e96eddb2274df0d"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "gpt-5.6-terra",
+   "condition": "vanilla",
+   "episode_id": "4902396203b42fbd343593526e5faea5b8de092c962895c69e30354e334e0db4",
+   "role": "program_chair",
+   "invocation_sha256": "d3154dd56ab0a4624c078798bcb7e0fb9c34fe70e2da41a2c8254dc5651ee44b"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "qwen3.5-35b-a3b",
+   "condition": "obligation",
+   "episode_id": "a9272d25df907d2f68899702536fa0c27a93d59205eadf157e34c5e9d63db295",
+   "role": "area_chair",
+   "invocation_sha256": "9cd2fa48f8e614c073a673302e3ad3cc24ecbd53c173fa49e1ede3734f3d0865"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "qwen3.5-35b-a3b",
+   "condition": "obligation",
+   "episode_id": "a9272d25df907d2f68899702536fa0c27a93d59205eadf157e34c5e9d63db295",
+   "role": "program_chair",
+   "invocation_sha256": "c0b4e21192574f354864ce47530d09803c13d85fde1237209311a6e5f76de829"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "qwen3.5-35b-a3b",
+   "condition": "vanilla",
+   "episode_id": "880fa4b34215333a7199e85d5cbd7683a233faa5844095d20f9c366dfa23303d",
+   "role": "area_chair",
+   "invocation_sha256": "2e2586ae3fd65a604a3f513c4a830c7a02fdbfd92f0ae06a5a4dc3cff0ab3040"
+  },
+  {
+   "scenario": "open_review_v3",
+   "model": "qwen3.5-35b-a3b",
+   "condition": "vanilla",
+   "episode_id": "880fa4b34215333a7199e85d5cbd7683a233faa5844095d20f9c366dfa23303d",
+   "role": "program_chair",
+   "invocation_sha256": "0cb4de50d6a076386b2ac4dd895ddfea3dfaeeecc0466b1a840729e4993b7b2b"
+  },
+  {
+   "scenario": "parliament",
+   "model": "claude-opus-5",
+   "condition": "obligation",
+   "episode_id": "f9642b497f71e34d6f63de23070469b6a219f9cbff07fb7870eab9f7d9877809",
+   "role": "chair",
+   "invocation_sha256": "37f23e960afa1a246be403bdd1dae5101af495a2eb066c3e5bfb24e4f72d0ff5"
+  },
+  {
+   "scenario": "parliament",
+   "model": "claude-opus-5",
+   "condition": "vanilla",
+   "episode_id": "3624dc88e3befcf37c821fffa73a31a7e488ea21dd86256e745a573d4fab1a30",
+   "role": "chair",
+   "invocation_sha256": "ee97de345a3ca4cae23360e538a31ff441668619dbf6525dec7319e310f84155"
+  },
+  {
+   "scenario": "parliament",
+   "model": "glm-5.3",
+   "condition": "obligation",
+   "episode_id": "32fca97c1fb3fba658eb4b148139adf8ded408aff5d6c594147577037e7a10b0",
+   "role": "chair",
+   "invocation_sha256": "b37219257e3e3b1f8694d001568c823fa72d870612d21f645ce5d17770f774cf"
+  },
+  {
+   "scenario": "parliament",
+   "model": "glm-5.3",
+   "condition": "vanilla",
+   "episode_id": "c9d90d808f8d9212a465a4bd3b89ee8fca0618cdac6be038e3742433de83c0e8",
+   "role": "chair",
+   "invocation_sha256": "61f226c2e8b0dbf222e90da9f8d49eef42458d3bd815534345c3a7159e7f0266"
+  },
+  {
+   "scenario": "parliament",
+   "model": "glm-5.3-flash",
+   "condition": "obligation",
+   "episode_id": "70a3d842a20ea1fad4fba5261b05bbf5e32b3cd85ff25a096ae4f4f0d1d9dfa0",
+   "role": "chair",
+   "invocation_sha256": "23e7250b956ac9d657d161b6ebbdf2fece83ab1cf3c5c6893961607384318241"
+  },
+  {
+   "scenario": "parliament",
+   "model": "glm-5.3-flash",
+   "condition": "vanilla",
+   "episode_id": "70ec6b83ce2a592293d99039e88a4c68b7e13383cf4f7b8d96b21dabc20092fe",
+   "role": "chair",
+   "invocation_sha256": "935fddf2835740d96c6a1a6adbb55a5e4acf8bae84c7185cd289462c15700295"
+  },
+  {
+   "scenario": "parliament",
+   "model": "gpt-5.6-luna",
+   "condition": "obligation",
+   "episode_id": "ecbee6456593d20561e014161a5503924d3c2bc0eb86c06248cb3948cd3a06d1",
+   "role": "chair",
+   "invocation_sha256": "4a0b237fe8ddbc64b3dec9f4171f79d0d0e8ad36dd7bfb4f140b182c7f183722"
+  },
+  {
+   "scenario": "parliament",
+   "model": "gpt-5.6-luna",
+   "condition": "vanilla",
+   "episode_id": "bd04778b236f7521e5fa88123a7d66b575afc260aba1f7f083bb2ca6195e8f1d",
+   "role": "chair",
+   "invocation_sha256": "d3abbee605a32758ab31041b234cdd354cedae861b6f10fe9e0c218c3af8118f"
+  },
+  {
+   "scenario": "parliament",
+   "model": "gpt-5.6-sol",
+   "condition": "obligation",
+   "episode_id": "eb2630ed164bca2b8395a48683d88f785e35f88f443b3a5299e7433a632b9f09",
+   "role": "chair",
+   "invocation_sha256": "9eb80c1bf7b5f6acc596be21108e327d610a31cead47effbee5a4db12b0b4e78"
+  },
+  {
+   "scenario": "parliament",
+   "model": "gpt-5.6-sol",
+   "condition": "vanilla",
+   "episode_id": "e407635b27a73e7ae6cd8e4620784ef58c998df134eebc4e85ee7c24fa8b1b57",
+   "role": "chair",
+   "invocation_sha256": "95dcceb162a8cc4c6c6b7c1f300271e4dffd5648d280a5d0ae945e94a0a05668"
+  },
+  {
+   "scenario": "parliament",
+   "model": "gpt-5.6-terra",
+   "condition": "obligation",
+   "episode_id": "ff8336ec8eae75abbd6ab4cfe3d27a642129ca8c9844edf0265239853239c399",
+   "role": "chair",
+   "invocation_sha256": "c2533b80319abf38662031a98db2cb821a8b2e4fa753ba6e905cdd98d0eb8ad6"
+  },
+  {
+   "scenario": "parliament",
+   "model": "gpt-5.6-terra",
+   "condition": "vanilla",
+   "episode_id": "be5dec7e2997c994535bc486b8c57af265095689774a25014098bb3b28b1ecd3",
+   "role": "chair",
+   "invocation_sha256": "a581d77725b7d0e6fdf95173a6b03ec028c408c336778f441d77a25b35b24ca5"
+  },
+  {
+   "scenario": "parliament",
+   "model": "qwen3.5-35b-a3b",
+   "condition": "obligation",
+   "episode_id": "41095e0c4a6f27604becb5637af0a02a6d54b64c58299e52ea46169e2159255b",
+   "role": "chair",
+   "invocation_sha256": "5fb09e485eb2ae86fc6b71784c7de0fbdfbd7c8830e41828fc5e112d04ac0b59"
+  },
+  {
+   "scenario": "parliament",
+   "model": "qwen3.5-35b-a3b",
+   "condition": "vanilla",
+   "episode_id": "cdbecded96c4491beb9425c07b20edc903f7060ee86534c424b0c6956b410cde",
+   "role": "chair",
+   "invocation_sha256": "8053150587ac9b7f5103f49ae7e5a7bc31a3b6645cb39cdc0d20babb39370e88"
+  }
+ ]
+}

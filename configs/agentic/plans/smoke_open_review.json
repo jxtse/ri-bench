@@ -1,0 +1,19 @@
+{
+ "batch": "smoke-openreview-20260911",
+ "scenario": "open_review",
+ "cases": [
+  "iclr2026_24989"
+ ],
+ "arms": [
+  "A"
+ ],
+ "conditions": [
+  "obligation"
+ ],
+ "models": [
+  "foundry-a/gpt-5.6-sol"
+ ],
+ "thinking": "medium",
+ "timeout_s": 900,
+ "pi_agent_dir": "configs/agentic/pi-agent"
+}

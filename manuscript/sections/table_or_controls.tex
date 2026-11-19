@@ -1,0 +1,14 @@
+\begin{table}[t]\centering\small\setlength{\tabcolsep}{4pt}
+\caption{\rev{Controls for the review package (OpenReview, constructed votes; 118 papers and eight models unless noted). Rates of program-chair decisions. Paper only: the agent sees the paper but no reviews or rebuttal; an agent that ignores the reviews would follow the adversarial majority at the rate of its paper-only disagreement with the historical decision (reference). Excess: same paper, model and prompt, adversarial following minus that reference. No scores: every numeric score removed from reviews and responses, change against the original adversarial arm. 2:2: two specific reviews against two generic reviews on the other side, with the specific side for (SP) or against (SM) the historical decision; parentheses give the paper-only reference. Ratio and order: 30 papers, four models.}}
+\label{tab:or-controls}
+\begin{tabular}{l l cc}\toprule
+Design & Quantity & Vanilla & Obligation \\ \midrule
+Adversarial 3:1 & follows majority & 0.48 & 0.28 \\
+Paper only & reference & 0.31 & 0.34 \\
+ & excess over reference & $+$0.17 & $-$0.06 \\
+No scores & change in following & $-$0.03 & $-$0.01 \\
+2:2, SP & follows specific side & 0.86 (0.69) & 0.83 (0.66) \\
+2:2, SM & follows specific side & 0.51 (0.31) & 0.48 (0.34) \\ \midrule
+Ratio 2:1 / 3:1 / 4:1 & follows majority & 0.28 / 0.53 / 0.62 & 0.24 / 0.27 / 0.37 \\
+3:1, dissenter first & follows majority & 0.45 & 0.27 \\
+\bottomrule\end{tabular}\end{table}

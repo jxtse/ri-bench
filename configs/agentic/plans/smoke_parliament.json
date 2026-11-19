@@ -1,0 +1,19 @@
+{
+ "batch": "smoke-parliament-v2-20260911",
+ "scenario": "parliament",
+ "cases": [
+  "parl_365_6717"
+ ],
+ "arms": [
+  "P"
+ ],
+ "conditions": [
+  "obligation"
+ ],
+ "models": [
+  "foundry-a/gpt-5.6-sol"
+ ],
+ "thinking": "medium",
+ "timeout_s": 900,
+ "pi_agent_dir": "configs/agentic/pi-agent"
+}

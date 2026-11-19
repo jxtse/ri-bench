@@ -1,0 +1,2130 @@
+[
+ {
+  "scenario": "court",
+  "model": "claude-opus-5",
+  "role": "judge",
+  "n_episodes": 480,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 5.0,
+    "median": 5.0,
+    "q3": 5.0
+   },
+   "files_read": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 5.0,
+    "median": 5.0,
+    "q3": 5.0
+   },
+   "output_tokens": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 5362.25,
+    "median": 6237.0,
+    "q3": 7279.5
+   },
+   "reasoning_tokens": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0
+   },
+   "wall_seconds": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 81.07972251076717,
+    "median": 93.28818177049106,
+    "q3": 107.9119096872164
+   },
+   "paper_coverage": {
+    "n_valid": 0,
+    "n_missing": 480,
+    "n_planned": 480,
+    "q1": null,
+    "median": null,
+    "q3": null
+   }
+  }
+ },
+ {
+  "scenario": "court",
+  "model": "glm-5.3",
+  "role": "judge",
+  "n_episodes": 480,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 5.0,
+    "median": 5.0,
+    "q3": 5.0
+   },
+   "files_read": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 5.0,
+    "median": 5.0,
+    "q3": 5.0
+   },
+   "output_tokens": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 1654.25,
+    "median": 2001.0,
+    "q3": 2395.75
+   },
+   "reasoning_tokens": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 78.5,
+    "median": 212.5,
+    "q3": 602.25
+   },
+   "wall_seconds": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 26.89908970848046,
+    "median": 32.360616854493855,
+    "q3": 43.333418833004544
+   },
+   "paper_coverage": {
+    "n_valid": 0,
+    "n_missing": 480,
+    "n_planned": 480,
+    "q1": null,
+    "median": null,
+    "q3": null
+   }
+  }
+ },
+ {
+  "scenario": "court",
+  "model": "glm-5.3-flash",
+  "role": "judge",
+  "n_episodes": 480,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 5.0,
+    "median": 5.0,
+    "q3": 5.0
+   },
+   "files_read": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 5.0,
+    "median": 5.0,
+    "q3": 5.0
+   },
+   "output_tokens": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 1662.75,
+    "median": 1976.0,
+    "q3": 2478.0
+   },
+   "reasoning_tokens": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 99.0,
+    "median": 223.0,
+    "q3": 664.5
+   },
+   "wall_seconds": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 37.40851453122741,
+    "median": 45.570940208475804,
+    "q3": 57.377782771218335
+   },
+   "paper_coverage": {
+    "n_valid": 0,
+    "n_missing": 480,
+    "n_planned": 480,
+    "q1": null,
+    "median": null,
+    "q3": null
+   }
+  }
+ },
+ {
+  "scenario": "court",
+  "model": "gpt-5.6-luna",
+  "role": "judge",
+  "n_episodes": 480,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 5.0,
+    "median": 5.0,
+    "q3": 5.0
+   },
+   "files_read": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 5.0,
+    "median": 5.0,
+    "q3": 5.0
+   },
+   "output_tokens": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 1537.0,
+    "median": 1674.5,
+    "q3": 1849.5
+   },
+   "reasoning_tokens": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 276.5,
+    "median": 375.0,
+    "q3": 516.5
+   },
+   "wall_seconds": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 18.150101395985985,
+    "median": 20.653519437502837,
+    "q3": 24.42740155175852
+   },
+   "paper_coverage": {
+    "n_valid": 0,
+    "n_missing": 480,
+    "n_planned": 480,
+    "q1": null,
+    "median": null,
+    "q3": null
+   }
+  }
+ },
+ {
+  "scenario": "court",
+  "model": "gpt-5.6-sol",
+  "role": "judge",
+  "n_episodes": 480,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 5.0,
+    "median": 5.0,
+    "q3": 5.0
+   },
+   "files_read": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 5.0,
+    "median": 5.0,
+    "q3": 5.0
+   },
+   "output_tokens": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 1782.75,
+    "median": 1958.5,
+    "q3": 2242.25
+   },
+   "reasoning_tokens": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 437.0,
+    "median": 517.0,
+    "q3": 829.75
+   },
+   "wall_seconds": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 40.67864277072658,
+    "median": 46.2772162080073,
+    "q3": 54.55845858324756
+   },
+   "paper_coverage": {
+    "n_valid": 0,
+    "n_missing": 480,
+    "n_planned": 480,
+    "q1": null,
+    "median": null,
+    "q3": null
+   }
+  }
+ },
+ {
+  "scenario": "court",
+  "model": "gpt-5.6-terra",
+  "role": "judge",
+  "n_episodes": 480,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 5.0,
+    "median": 5.0,
+    "q3": 5.0
+   },
+   "files_read": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 5.0,
+    "median": 5.0,
+    "q3": 5.0
+   },
+   "output_tokens": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 1264.75,
+    "median": 1403.5,
+    "q3": 1534.25
+   },
+   "reasoning_tokens": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 167.0,
+    "median": 241.5,
+    "q3": 400.25
+   },
+   "wall_seconds": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 22.376229843997862,
+    "median": 24.883090187504422,
+    "q3": 29.037642416529707
+   },
+   "paper_coverage": {
+    "n_valid": 0,
+    "n_missing": 480,
+    "n_planned": 480,
+    "q1": null,
+    "median": null,
+    "q3": null
+   }
+  }
+ },
+ {
+  "scenario": "court",
+  "model": "qwen3.5-35b-a3b",
+  "role": "judge",
+  "n_episodes": 480,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 5.0,
+    "median": 5.0,
+    "q3": 5.0
+   },
+   "files_read": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 5.0,
+    "median": 5.0,
+    "q3": 5.0
+   },
+   "output_tokens": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 2101.25,
+    "median": 2384.0,
+    "q3": 2744.25
+   },
+   "reasoning_tokens": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 591.5,
+    "median": 768.0,
+    "q3": 1020.0
+   },
+   "wall_seconds": {
+    "n_valid": 480,
+    "n_missing": 0,
+    "n_planned": 480,
+    "q1": 16.0680846877367,
+    "median": 18.49903656251263,
+    "q3": 22.18223548977403
+   },
+   "paper_coverage": {
+    "n_valid": 0,
+    "n_missing": 480,
+    "n_planned": 480,
+    "q1": null,
+    "median": null,
+    "q3": null
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v2",
+  "model": "claude-opus-5",
+  "role": "area_chair",
+  "n_episodes": 476,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 13.0,
+    "median": 13.0,
+    "q3": 15.0
+   },
+   "files_read": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 12.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "output_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 3832.5,
+    "median": 5711.5,
+    "q3": 7865.5
+   },
+   "reasoning_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0
+   },
+   "wall_seconds": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 67.16153760399175,
+    "median": 95.71875922899926,
+    "q3": 128.4525796770031
+   },
+   "paper_coverage": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v2",
+  "model": "claude-opus-5",
+  "role": "program_chair",
+  "n_episodes": 476,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 15.0,
+    "median": 17.0,
+    "q3": 18.0
+   },
+   "files_read": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 13.0,
+    "median": 13.0,
+    "q3": 13.0
+   },
+   "output_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 3275.75,
+    "median": 3907.0,
+    "q3": 4991.0
+   },
+   "reasoning_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0
+   },
+   "wall_seconds": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 57.200047719001304,
+    "median": 69.71206885448191,
+    "q3": 84.86427042703144
+   },
+   "paper_coverage": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 0.369975,
+    "median": 0.50745,
+    "q3": 0.6675500000000001
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v2",
+  "model": "glm-5.3",
+  "role": "area_chair",
+  "n_episodes": 476,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 11.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "files_read": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 11.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "output_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 1378.75,
+    "median": 1640.5,
+    "q3": 1925.0
+   },
+   "reasoning_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 104.75,
+    "median": 211.0,
+    "q3": 400.75
+   },
+   "wall_seconds": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 29.058750437761773,
+    "median": 35.96328056251514,
+    "q3": 45.33593244798976
+   },
+   "paper_coverage": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 0.254325,
+    "median": 0.83195,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v2",
+  "model": "glm-5.3",
+  "role": "program_chair",
+  "n_episodes": 476,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 9.0,
+    "median": 12.0,
+    "q3": 13.0
+   },
+   "files_read": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 9.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "output_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 667.75,
+    "median": 842.0,
+    "q3": 1067.0
+   },
+   "reasoning_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 57.0,
+    "median": 100.0,
+    "q3": 187.0
+   },
+   "wall_seconds": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 18.347359489518567,
+    "median": 23.260678228980396,
+    "q3": 29.963110968768888
+   },
+   "paper_coverage": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.067625
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v2",
+  "model": "gpt-5.6-luna",
+  "role": "area_chair",
+  "n_episodes": 476,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 13.0,
+    "median": 14.0,
+    "q3": 16.0
+   },
+   "files_read": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 12.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "output_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 1457.5,
+    "median": 1671.5,
+    "q3": 1972.25
+   },
+   "reasoning_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 219.0,
+    "median": 283.5,
+    "q3": 356.5
+   },
+   "wall_seconds": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 19.723771656259487,
+    "median": 23.4975547085196,
+    "q3": 28.417651708004996
+   },
+   "paper_coverage": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v2",
+  "model": "gpt-5.6-luna",
+  "role": "program_chair",
+  "n_episodes": 476,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 13.0,
+    "median": 13.0,
+    "q3": 13.0
+   },
+   "files_read": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 13.0,
+    "median": 13.0,
+    "q3": 13.0
+   },
+   "output_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 685.75,
+    "median": 730.0,
+    "q3": 785.25
+   },
+   "reasoning_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 60.0,
+    "median": 74.5,
+    "q3": 101.0
+   },
+   "wall_seconds": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 8.857134656485869,
+    "median": 10.285281229007524,
+    "q3": 12.512634854239877
+   },
+   "paper_coverage": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v2",
+  "model": "gpt-5.6-sol",
+  "role": "area_chair",
+  "n_episodes": 476,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 14.0,
+    "median": 15.0,
+    "q3": 16.0
+   },
+   "files_read": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 12.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "output_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 1350.75,
+    "median": 1596.5,
+    "q3": 1866.75
+   },
+   "reasoning_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 263.75,
+    "median": 373.5,
+    "q3": 510.5
+   },
+   "wall_seconds": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 33.50384450001002,
+    "median": 39.33240306198422,
+    "q3": 47.542382635729155
+   },
+   "paper_coverage": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v2",
+  "model": "gpt-5.6-sol",
+  "role": "program_chair",
+  "n_episodes": 476,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 13.0,
+    "median": 15.0,
+    "q3": 16.0
+   },
+   "files_read": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 13.0,
+    "median": 13.0,
+    "q3": 13.0
+   },
+   "output_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 641.5,
+    "median": 807.0,
+    "q3": 949.0
+   },
+   "reasoning_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 89.0,
+    "median": 164.0,
+    "q3": 223.25
+   },
+   "wall_seconds": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 15.996433093736414,
+    "median": 21.02542356251797,
+    "q3": 25.158008281272487
+   },
+   "paper_coverage": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v2",
+  "model": "gpt-5.6-terra",
+  "role": "area_chair",
+  "n_episodes": 476,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 14.0,
+    "median": 15.0,
+    "q3": 16.0
+   },
+   "files_read": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 12.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "output_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 1380.0,
+    "median": 1599.0,
+    "q3": 1829.25
+   },
+   "reasoning_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 243.0,
+    "median": 345.0,
+    "q3": 465.25
+   },
+   "wall_seconds": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 24.321247906264034,
+    "median": 28.14662533349474,
+    "q3": 32.20874827077205
+   },
+   "paper_coverage": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v2",
+  "model": "gpt-5.6-terra",
+  "role": "program_chair",
+  "n_episodes": 476,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 14.0,
+    "median": 14.0,
+    "q3": 15.0
+   },
+   "files_read": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 13.0,
+    "median": 13.0,
+    "q3": 13.0
+   },
+   "output_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 758.0,
+    "median": 852.0,
+    "q3": 978.0
+   },
+   "reasoning_tokens": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 95.0,
+    "median": 134.0,
+    "q3": 201.25
+   },
+   "wall_seconds": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 13.059100270751514,
+    "median": 15.267033749987604,
+    "q3": 18.020456948230276
+   },
+   "paper_coverage": {
+    "n_valid": 476,
+    "n_missing": 0,
+    "n_planned": 476,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v3",
+  "model": "claude-opus-5",
+  "role": "area_chair",
+  "n_episodes": 472,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 13.0,
+    "median": 14.0,
+    "q3": 15.0
+   },
+   "files_read": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 12.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "output_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 4331.5,
+    "median": 6087.5,
+    "q3": 7417.25
+   },
+   "reasoning_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0
+   },
+   "wall_seconds": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 73.06424907347537,
+    "median": 99.05388347900589,
+    "q3": 119.86567090648168
+   },
+   "paper_coverage": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v3",
+  "model": "claude-opus-5",
+  "role": "program_chair",
+  "n_episodes": 472,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 15.0,
+    "median": 17.0,
+    "q3": 18.0
+   },
+   "files_read": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 13.0,
+    "median": 13.0,
+    "q3": 13.0
+   },
+   "output_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 3136.0,
+    "median": 3720.0,
+    "q3": 4455.0
+   },
+   "reasoning_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0
+   },
+   "wall_seconds": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 53.513582823215984,
+    "median": 63.694936374988174,
+    "q3": 75.58330385424779
+   },
+   "paper_coverage": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 0.3521,
+    "median": 0.49785,
+    "q3": 0.6688999999999999
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v3",
+  "model": "glm-5.3",
+  "role": "area_chair",
+  "n_episodes": 472,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 11.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "files_read": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 11.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "output_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 1424.0,
+    "median": 1715.0,
+    "q3": 2056.5
+   },
+   "reasoning_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 103.0,
+    "median": 269.0,
+    "q3": 515.0
+   },
+   "wall_seconds": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 23.517919729245477,
+    "median": 29.46806339599425,
+    "q3": 35.802749500231585
+   },
+   "paper_coverage": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 0.251575,
+    "median": 0.7188,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v3",
+  "model": "glm-5.3",
+  "role": "program_chair",
+  "n_episodes": 472,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 10.0,
+    "median": 12.0,
+    "q3": 13.0
+   },
+   "files_read": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 9.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "output_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 707.5,
+    "median": 924.5,
+    "q3": 1130.5
+   },
+   "reasoning_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 72.0,
+    "median": 128.5,
+    "q3": 235.25
+   },
+   "wall_seconds": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 13.918473864512634,
+    "median": 17.92575418751221,
+    "q3": 21.930583833993296
+   },
+   "paper_coverage": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 0.0,
+    "median": 0.0293,
+    "q3": 0.14815
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v3",
+  "model": "glm-5.3-flash",
+  "role": "area_chair",
+  "n_episodes": 472,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 12.0,
+    "median": 13.0,
+    "q3": 14.0
+   },
+   "files_read": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 12.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "output_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 1640.25,
+    "median": 2155.5,
+    "q3": 2790.0
+   },
+   "reasoning_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 199.5,
+    "median": 516.5,
+    "q3": 946.5
+   },
+   "wall_seconds": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 35.83765930228401,
+    "median": 48.7168171875237,
+    "q3": 63.825409843746456
+   },
+   "paper_coverage": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v3",
+  "model": "glm-5.3-flash",
+  "role": "program_chair",
+  "n_episodes": 472,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 11.0,
+    "median": 13.0,
+    "q3": 13.0
+   },
+   "files_read": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 10.0,
+    "median": 12.0,
+    "q3": 13.0
+   },
+   "output_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 717.0,
+    "median": 918.5,
+    "q3": 1159.25
+   },
+   "reasoning_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 78.0,
+    "median": 126.0,
+    "q3": 248.25
+   },
+   "wall_seconds": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 16.398664323001867,
+    "median": 20.439387978985906,
+    "q3": 26.032786082752864
+   },
+   "paper_coverage": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 0.0,
+    "median": 0.1112,
+    "q3": 0.642425
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v3",
+  "model": "gpt-5.6-luna",
+  "role": "area_chair",
+  "n_episodes": 472,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 13.0,
+    "median": 14.0,
+    "q3": 17.0
+   },
+   "files_read": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 12.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "output_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 1547.5,
+    "median": 1755.0,
+    "q3": 2025.0
+   },
+   "reasoning_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 261.75,
+    "median": 329.5,
+    "q3": 417.25
+   },
+   "wall_seconds": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 18.889331978731207,
+    "median": 21.89783777098637,
+    "q3": 25.843583323498024
+   },
+   "paper_coverage": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v3",
+  "model": "gpt-5.6-luna",
+  "role": "program_chair",
+  "n_episodes": 472,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 13.0,
+    "median": 13.0,
+    "q3": 13.0
+   },
+   "files_read": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 13.0,
+    "median": 13.0,
+    "q3": 13.0
+   },
+   "output_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 700.5,
+    "median": 747.0,
+    "q3": 803.5
+   },
+   "reasoning_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 68.0,
+    "median": 88.0,
+    "q3": 127.0
+   },
+   "wall_seconds": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 8.026827094261535,
+    "median": 9.119527583010495,
+    "q3": 10.66665734325943
+   },
+   "paper_coverage": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 0.9314,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v3",
+  "model": "gpt-5.6-sol",
+  "role": "area_chair",
+  "n_episodes": 472,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 14.0,
+    "median": 15.0,
+    "q3": 17.0
+   },
+   "files_read": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 12.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "output_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 1448.75,
+    "median": 1684.5,
+    "q3": 1908.25
+   },
+   "reasoning_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 309.75,
+    "median": 414.0,
+    "q3": 544.25
+   },
+   "wall_seconds": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 27.440414937766036,
+    "median": 31.96866595800384,
+    "q3": 36.20900287476252
+   },
+   "paper_coverage": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v3",
+  "model": "gpt-5.6-sol",
+  "role": "program_chair",
+  "n_episodes": 472,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 13.0,
+    "median": 15.0,
+    "q3": 16.0
+   },
+   "files_read": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 13.0,
+    "median": 13.0,
+    "q3": 13.0
+   },
+   "output_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 667.75,
+    "median": 810.5,
+    "q3": 960.25
+   },
+   "reasoning_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 95.0,
+    "median": 170.5,
+    "q3": 241.25
+   },
+   "wall_seconds": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 12.760577541746898,
+    "median": 16.84149597948999,
+    "q3": 19.53601435451128
+   },
+   "paper_coverage": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v3",
+  "model": "gpt-5.6-terra",
+  "role": "area_chair",
+  "n_episodes": 472,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 14.0,
+    "median": 15.0,
+    "q3": 17.0
+   },
+   "files_read": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 12.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "output_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 1424.75,
+    "median": 1626.5,
+    "q3": 1830.5
+   },
+   "reasoning_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 272.0,
+    "median": 364.5,
+    "q3": 485.25
+   },
+   "wall_seconds": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 20.21744807275536,
+    "median": 23.081707375502447,
+    "q3": 26.317916520725703
+   },
+   "paper_coverage": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v3",
+  "model": "gpt-5.6-terra",
+  "role": "program_chair",
+  "n_episodes": 472,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 14.0,
+    "median": 15.0,
+    "q3": 16.0
+   },
+   "files_read": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 13.0,
+    "median": 13.0,
+    "q3": 13.0
+   },
+   "output_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 776.0,
+    "median": 882.0,
+    "q3": 977.0
+   },
+   "reasoning_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 110.75,
+    "median": 148.0,
+    "q3": 194.5
+   },
+   "wall_seconds": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 11.287210968745057,
+    "median": 13.064488749980228,
+    "q3": 14.869917437754339
+   },
+   "paper_coverage": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v3",
+  "model": "qwen3.5-35b-a3b",
+  "role": "area_chair",
+  "n_episodes": 472,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 11.0,
+    "median": 12.0,
+    "q3": 13.0
+   },
+   "files_read": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 11.0,
+    "median": 12.0,
+    "q3": 12.0
+   },
+   "output_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 2204.0,
+    "median": 2439.5,
+    "q3": 2750.0
+   },
+   "reasoning_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 766.0,
+    "median": 899.0,
+    "q3": 1087.5
+   },
+   "wall_seconds": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 19.00947798922425,
+    "median": 21.380806228989968,
+    "q3": 25.013305218773894
+   },
+   "paper_coverage": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 1.0,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "open_review_v3",
+  "model": "qwen3.5-35b-a3b",
+  "role": "program_chair",
+  "n_episodes": 472,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 12.0,
+    "median": 12.0,
+    "q3": 13.0
+   },
+   "files_read": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 12.0,
+    "median": 12.0,
+    "q3": 13.0
+   },
+   "output_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 1447.75,
+    "median": 1602.0,
+    "q3": 1799.25
+   },
+   "reasoning_tokens": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 667.0,
+    "median": 788.0,
+    "q3": 954.0
+   },
+   "wall_seconds": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 13.169098031241447,
+    "median": 14.699595895479433,
+    "q3": 16.9019251667778
+   },
+   "paper_coverage": {
+    "n_valid": 472,
+    "n_missing": 0,
+    "n_planned": 472,
+    "q1": 0.7773,
+    "median": 1.0,
+    "q3": 1.0
+   }
+  }
+ },
+ {
+  "scenario": "parliament",
+  "model": "claude-opus-5",
+  "role": "chair",
+  "n_episodes": 240,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 11.0,
+    "median": 11.0,
+    "q3": 12.0
+   },
+   "files_read": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 11.0,
+    "median": 11.0,
+    "q3": 11.0
+   },
+   "output_tokens": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 13224.5,
+    "median": 15878.0,
+    "q3": 18658.25
+   },
+   "reasoning_tokens": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 0.0,
+    "median": 0.0,
+    "q3": 0.0
+   },
+   "wall_seconds": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 204.9601044064766,
+    "median": 240.47826656250982,
+    "q3": 284.29364288575016
+   },
+   "paper_coverage": {
+    "n_valid": 0,
+    "n_missing": 240,
+    "n_planned": 240,
+    "q1": null,
+    "median": null,
+    "q3": null
+   }
+  }
+ },
+ {
+  "scenario": "parliament",
+  "model": "glm-5.3",
+  "role": "chair",
+  "n_episodes": 240,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 11.0,
+    "median": 11.0,
+    "q3": 11.0
+   },
+   "files_read": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 11.0,
+    "median": 11.0,
+    "q3": 11.0
+   },
+   "output_tokens": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 3093.25,
+    "median": 3651.0,
+    "q3": 4216.5
+   },
+   "reasoning_tokens": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 42.0,
+    "median": 89.5,
+    "q3": 211.75
+   },
+   "wall_seconds": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 56.98397721826768,
+    "median": 69.02310533300624,
+    "q3": 87.05126848976215
+   },
+   "paper_coverage": {
+    "n_valid": 0,
+    "n_missing": 240,
+    "n_planned": 240,
+    "q1": null,
+    "median": null,
+    "q3": null
+   }
+  }
+ },
+ {
+  "scenario": "parliament",
+  "model": "glm-5.3-flash",
+  "role": "chair",
+  "n_episodes": 240,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 11.0,
+    "median": 11.0,
+    "q3": 12.0
+   },
+   "files_read": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 11.0,
+    "median": 11.0,
+    "q3": 11.0
+   },
+   "output_tokens": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 3506.75,
+    "median": 4162.0,
+    "q3": 5003.25
+   },
+   "reasoning_tokens": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 72.0,
+    "median": 147.5,
+    "q3": 538.5
+   },
+   "wall_seconds": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 77.2911842817557,
+    "median": 92.87549072899856,
+    "q3": 111.7624513644987
+   },
+   "paper_coverage": {
+    "n_valid": 0,
+    "n_missing": 240,
+    "n_planned": 240,
+    "q1": null,
+    "median": null,
+    "q3": null
+   }
+  }
+ },
+ {
+  "scenario": "parliament",
+  "model": "gpt-5.6-luna",
+  "role": "chair",
+  "n_episodes": 240,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 11.0,
+    "median": 11.0,
+    "q3": 12.0
+   },
+   "files_read": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 11.0,
+    "median": 11.0,
+    "q3": 11.0
+   },
+   "output_tokens": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 3492.5,
+    "median": 3942.0,
+    "q3": 4501.5
+   },
+   "reasoning_tokens": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 171.5,
+    "median": 205.5,
+    "q3": 238.0
+   },
+   "wall_seconds": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 38.666872614776366,
+    "median": 44.38810083351564,
+    "q3": 53.53382352051267
+   },
+   "paper_coverage": {
+    "n_valid": 0,
+    "n_missing": 240,
+    "n_planned": 240,
+    "q1": null,
+    "median": null,
+    "q3": null
+   }
+  }
+ },
+ {
+  "scenario": "parliament",
+  "model": "gpt-5.6-sol",
+  "role": "chair",
+  "n_episodes": 240,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 11.0,
+    "median": 11.0,
+    "q3": 12.0
+   },
+   "files_read": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 11.0,
+    "median": 11.0,
+    "q3": 11.0
+   },
+   "output_tokens": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 3905.5,
+    "median": 4254.0,
+    "q3": 4645.25
+   },
+   "reasoning_tokens": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 198.75,
+    "median": 251.0,
+    "q3": 328.25
+   },
+   "wall_seconds": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 75.04775349974807,
+    "median": 82.73803762553143,
+    "q3": 91.1923257187591
+   },
+   "paper_coverage": {
+    "n_valid": 0,
+    "n_missing": 240,
+    "n_planned": 240,
+    "q1": null,
+    "median": null,
+    "q3": null
+   }
+  }
+ },
+ {
+  "scenario": "parliament",
+  "model": "gpt-5.6-terra",
+  "role": "chair",
+  "n_episodes": 240,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 11.0,
+    "median": 11.0,
+    "q3": 12.0
+   },
+   "files_read": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 11.0,
+    "median": 11.0,
+    "q3": 11.0
+   },
+   "output_tokens": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 3482.75,
+    "median": 3940.5,
+    "q3": 4381.25
+   },
+   "reasoning_tokens": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 92.0,
+    "median": 122.5,
+    "q3": 162.0
+   },
+   "wall_seconds": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 43.4869610107271,
+    "median": 49.25591493799584,
+    "q3": 55.90693610427843
+   },
+   "paper_coverage": {
+    "n_valid": 0,
+    "n_missing": 240,
+    "n_planned": 240,
+    "q1": null,
+    "median": null,
+    "q3": null
+   }
+  }
+ },
+ {
+  "scenario": "parliament",
+  "model": "qwen3.5-35b-a3b",
+  "role": "chair",
+  "n_episodes": 240,
+  "metrics": {
+   "tool_calls": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 11.0,
+    "median": 11.0,
+    "q3": 12.0
+   },
+   "files_read": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 11.0,
+    "median": 11.0,
+    "q3": 11.0
+   },
+   "output_tokens": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 3025.5,
+    "median": 3465.0,
+    "q3": 4008.5
+   },
+   "reasoning_tokens": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 405.75,
+    "median": 601.5,
+    "q3": 854.0
+   },
+   "wall_seconds": {
+    "n_valid": 240,
+    "n_missing": 0,
+    "n_planned": 240,
+    "q1": 26.511524375266163,
+    "median": 30.917159478995018,
+    "q3": 35.62248570800875
+   },
+   "paper_coverage": {
+    "n_valid": 0,
+    "n_missing": 240,
+    "n_planned": 240,
+    "q1": null,
+    "median": null,
+    "q3": null
+   }
+  }
+ }
+]

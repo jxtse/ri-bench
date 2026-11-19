@@ -1,0 +1,233 @@
+{
+ "schema_version": 1,
+ "court": {
+  "n": 3360,
+  "verified": 3339,
+  "fallback": 21,
+  "verified_silent_no_evidence_required": 76,
+  "pattern_final_diagonal": 154,
+  "pattern_semantic_verified_diagonal": 133,
+  "matrix_labels": [
+   "ADOPTED",
+   "CORRECTED",
+   "TRUTH_STATED",
+   "SILENT"
+  ],
+  "pattern_final_matrix": [
+   [
+    24,
+    287,
+    24,
+    1
+   ],
+   [
+    0,
+    38,
+    22,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    74,
+    176,
+    2622,
+    92
+   ]
+  ],
+  "pattern_semantic_verified_matrix": [
+   [
+    20,
+    287,
+    24,
+    1
+   ],
+   [
+    0,
+    38,
+    22,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    74,
+    176,
+    2622,
+    75
+   ]
+  ]
+ },
+ "parliament": {
+  "n": 3360,
+  "verified": 3094,
+  "fallback": 266,
+  "verified_uncited_no_evidence_required": 1566,
+  "retention_by_condition": {
+   "vanilla": {
+    "two": 115,
+    "unverified": 118,
+    "zero": 316,
+    "uncited": 868,
+    "one": 263
+   },
+   "obligation": {
+    "unverified": 148,
+    "one": 322,
+    "two": 247,
+    "uncited": 698,
+    "zero": 265
+   }
+  }
+ },
+ "by_model_condition": [
+  {
+   "model": "claude-opus-5",
+   "condition": "vanilla",
+   "court_n": 240,
+   "court_verified": 235,
+   "court_fallback": 5,
+   "parliament_witness_n": 240,
+   "parliament_verified": 205,
+   "parliament_fallback": 35
+  },
+  {
+   "model": "claude-opus-5",
+   "condition": "obligation",
+   "court_n": 240,
+   "court_verified": 238,
+   "court_fallback": 2,
+   "parliament_witness_n": 240,
+   "parliament_verified": 203,
+   "parliament_fallback": 37
+  },
+  {
+   "model": "glm-5.3",
+   "condition": "vanilla",
+   "court_n": 240,
+   "court_verified": 240,
+   "court_fallback": 0,
+   "parliament_witness_n": 240,
+   "parliament_verified": 229,
+   "parliament_fallback": 11
+  },
+  {
+   "model": "glm-5.3",
+   "condition": "obligation",
+   "court_n": 240,
+   "court_verified": 239,
+   "court_fallback": 1,
+   "parliament_witness_n": 240,
+   "parliament_verified": 222,
+   "parliament_fallback": 18
+  },
+  {
+   "model": "glm-5.3-flash",
+   "condition": "vanilla",
+   "court_n": 240,
+   "court_verified": 235,
+   "court_fallback": 5,
+   "parliament_witness_n": 240,
+   "parliament_verified": 222,
+   "parliament_fallback": 18
+  },
+  {
+   "model": "glm-5.3-flash",
+   "condition": "obligation",
+   "court_n": 240,
+   "court_verified": 238,
+   "court_fallback": 2,
+   "parliament_witness_n": 240,
+   "parliament_verified": 215,
+   "parliament_fallback": 25
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "condition": "vanilla",
+   "court_n": 240,
+   "court_verified": 240,
+   "court_fallback": 0,
+   "parliament_witness_n": 240,
+   "parliament_verified": 226,
+   "parliament_fallback": 14
+  },
+  {
+   "model": "gpt-5.6-luna",
+   "condition": "obligation",
+   "court_n": 240,
+   "court_verified": 239,
+   "court_fallback": 1,
+   "parliament_witness_n": 240,
+   "parliament_verified": 220,
+   "parliament_fallback": 20
+  },
+  {
+   "model": "gpt-5.6-sol",
+   "condition": "vanilla",
+   "court_n": 240,
+   "court_verified": 240,
+   "court_fallback": 0,
+   "parliament_witness_n": 240,
+   "parliament_verified": 223,
+   "parliament_fallback": 17
+  },
+  {
+   "model": "gpt-5.6-sol",
+   "condition": "obligation",
+   "court_n": 240,
+   "court_verified": 240,
+   "court_fallback": 0,
+   "parliament_witness_n": 240,
+   "parliament_verified": 221,
+   "parliament_fallback": 19
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "condition": "vanilla",
+   "court_n": 240,
+   "court_verified": 239,
+   "court_fallback": 1,
+   "parliament_witness_n": 240,
+   "parliament_verified": 225,
+   "parliament_fallback": 15
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "condition": "obligation",
+   "court_n": 240,
+   "court_verified": 239,
+   "court_fallback": 1,
+   "parliament_witness_n": 240,
+   "parliament_verified": 224,
+   "parliament_fallback": 16
+  },
+  {
+   "model": "qwen3.5-35b-a3b",
+   "condition": "vanilla",
+   "court_n": 240,
+   "court_verified": 239,
+   "court_fallback": 1,
+   "parliament_witness_n": 240,
+   "parliament_verified": 232,
+   "parliament_fallback": 8
+  },
+  {
+   "model": "qwen3.5-35b-a3b",
+   "condition": "obligation",
+   "court_n": 240,
+   "court_verified": 238,
+   "court_fallback": 2,
+   "parliament_witness_n": 240,
+   "parliament_verified": 227,
+   "parliament_fallback": 13
+  }
+ ]
+}

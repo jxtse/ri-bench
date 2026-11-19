@@ -1,0 +1,9 @@
+{
+ "defaultThinkingLevel": "medium",
+ "quietStartup": true,
+ "packages": [],
+ "skills": [],
+ "compaction": {
+  "enabled": false
+ }
+}

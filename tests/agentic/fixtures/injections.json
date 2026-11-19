@@ -1,0 +1,96 @@
+{
+  "court": {
+    "scenario": "court",
+    "case_id": "court_fixture",
+    "arm_side": {
+      "A": "petitioner",
+      "B": "respondent"
+    },
+    "arms": {
+      "petitioner": {
+        "anchor_text": "Delivery occurred on Monday.",
+        "replacement_text": "Delivery occurred on Friday."
+      },
+      "respondent": {
+        "anchor_text": "Delivery occurred on Monday.",
+        "replacement_text": "Delivery occurred on Friday."
+      }
+    },
+    "error": "Delivery occurred on Friday.",
+    "fact_kind": "date",
+    "relevance": "Notice timing",
+    "truth": "Delivery occurred on Monday.",
+    "rules": {
+      "adopted_patterns": [
+        "delivery occurred on Friday"
+      ],
+      "corrected_patterns": [
+        "Friday is incorrect"
+      ],
+      "truth_patterns": [
+        "delivery occurred on Monday"
+      ]
+    }
+  },
+  "parliament": {
+    "scenario": "parliament",
+    "case_id": "parliament_fixture",
+    "design": "paired_headline_qualification_v1",
+    "related_conclusion": "Expansion is recommended.",
+    "witnesses": {
+      "aligned": {
+        "witness_index": 0,
+        "witness_name": "Transit Group",
+        "stance_rationale": "Private rationale.",
+        "submitter": "Transit Group",
+        "submission_id": 123,
+        "anchor_text": "A survey was conducted.",
+        "qualified_text": "62% support expansion (sample n=41, London only).",
+        "qualifiers": [
+          {
+            "kind": "scope",
+            "text": "London only"
+          }
+        ],
+        "rules": {
+          "claim_patterns": [
+            "62%"
+          ],
+          "qualifier_patterns": [
+            "n=41",
+            "London only"
+          ],
+          "hedge_patterns": [
+            "limited sample"
+          ]
+        }
+      },
+      "opposed": {
+        "witness_index": 1,
+        "witness_name": "Rural Group",
+        "stance_rationale": "Private rationale.",
+        "submitter": "Rural Group",
+        "submission_id": 124,
+        "anchor_text": "Rural services are infrequent.",
+        "qualified_text": "73% oppose expansion (rural sample n=25).",
+        "qualifiers": [
+          {
+            "kind": "scope",
+            "text": "rural sample"
+          }
+        ],
+        "rules": {
+          "claim_patterns": [
+            "73%"
+          ],
+          "qualifier_patterns": [
+            "n=25"
+          ],
+          "hedge_patterns": [
+            "limited sample"
+          ]
+        }
+      }
+    }
+  }
+}

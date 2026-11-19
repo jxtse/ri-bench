@@ -1,0 +1,41 @@
+{
+ "batch": "harness-hard-court-codex-sol-20260924",
+ "scenario": "court",
+ "cases": [
+  "scotus_dart_cherokee_basin_operating_company_llc_v_owens_2014_13_719",
+  "scotus_summers_v_earth_island_institute_2008_07_463",
+  "scotus_north_carolina_department_of_revenue_v_t_2018_18_457",
+  "scotus_lozman_v_city_of_riviera_beach_florida_2017_17_21",
+  "scotus_kahler_v_kansas_2019_18_6135",
+  "scotus_united_states_v_davis_2018_18_431",
+  "scotus_flowers_v_mississippi_2018_17_9572",
+  "scotus_fernandez_v_california_2013_12_7822",
+  "scotus_peugh_v_united_states_2012_12_62",
+  "scotus_nelson_v_colorado_2016_15_1256",
+  "scotus_koontz_v_st_john_s_river_water_management_2012_11_1447",
+  "scotus_davis_v_federal_election_commission_2007_07_320",
+  "scotus_dada_v_mukasey_2007_06_1181",
+  "scotus_comptroller_of_the_treasury_of_maryland_v_wynne_2014_13_485",
+  "scotus_washington_state_department_of_licensing_v_cougar_den_inc_2018_16_1498",
+  "scotus_robers_v_united_states_2013_12_9012",
+  "scotus_lozano_v_montoya_alvarez_2013_12_820",
+  "scotus_helix_energy_solutions_group_inc_v_hewitt_2022_21_984",
+  "scotus_culley_v_marshall_2023_22_585",
+  "scotus_biden_v_nebraska_2022_22_506"
+ ],
+ "arms": [
+  "A",
+  "B"
+ ],
+ "conditions": [
+  "obligation",
+  "vanilla"
+ ],
+ "models": [
+  "foundry-a/gpt-5.6-sol"
+ ],
+ "thinking": "medium",
+ "timeout_s": 1200,
+ "pi_agent_dir": "configs/agentic/pi-agent",
+ "harness": "codex"
+}

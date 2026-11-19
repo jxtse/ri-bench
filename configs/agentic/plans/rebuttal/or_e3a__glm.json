@@ -1,0 +1,49 @@
+{
+ "batch": "rebuttal-or-e3a-glm-20261107",
+ "scenario": "or_e3a",
+ "cases": [
+  "iclr2024_8558",
+  "iclr2024_8638",
+  "iclr2024_8687",
+  "iclr2024_8697",
+  "iclr2024_8755",
+  "iclr2024_8867",
+  "iclr2024_8958",
+  "iclr2024_8996",
+  "iclr2024_9019",
+  "iclr2024_9245",
+  "iclr2024_9260",
+  "iclr2025_13870",
+  "iclr2025_14042",
+  "iclr2025_14224",
+  "iclr2026_25607",
+  "iclr2024_8572",
+  "iclr2024_9005",
+  "iclr2024_9228",
+  "iclr2024_9335",
+  "iclr2024_9394",
+  "iclr2025_13808",
+  "iclr2025_13875",
+  "iclr2025_14287",
+  "iclr2026_25031",
+  "iclr2026_25101",
+  "iclr2026_25217",
+  "iclr2026_25221",
+  "iclr2026_25279",
+  "iclr2026_25317",
+  "iclr2026_25514"
+ ],
+ "arms": [
+  "X"
+ ],
+ "conditions": [
+  "obligation",
+  "vanilla"
+ ],
+ "models": [
+  "mint/glm-5.3"
+ ],
+ "thinking": "medium",
+ "timeout_s": 1200,
+ "pi_agent_dir": "configs/agentic/pi-agent"
+}

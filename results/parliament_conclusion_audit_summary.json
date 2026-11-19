@@ -1,0 +1,143 @@
+{
+ "design": "exploratory post hoc sample, not preregistered experiment",
+ "scope": "20-case stratified-by-model/prompt exploratory sample; not the full 1680 reports",
+ "seed": 20260914,
+ "n_reports": 280,
+ "n_cases": 20,
+ "n_attempts": 348,
+ "complete_dispositions": true,
+ "pending_retry": 0,
+ "n_evidence_verified": 267,
+ "n_unresolved": 13,
+ "evaluator": "gemini-3.8-flash",
+ "human_validated": false,
+ "failure_counts": {
+  "incomplete response: length": 54,
+  "report quote not verified": 15,
+  "reference quote not verified": 9,
+  "HTTP Error 503: ": 2,
+  "Unterminated string starting at: line 5 column 19 (char 286)": 1
+ },
+ "ledger_sha256": "d9beaddddbecfbc16a5394039d66e1600f1f4add5326d324fa29d87bf2ce0fc7",
+ "prompt_sha256": "4b4f92e9cdcf0a4fa0d1bfa5c2a87781284380943cb77467792319d1e46e62e0",
+ "conditions": {
+  "vanilla": {
+   "n": 140,
+   "n_verified": 135,
+   "n_unresolved": 5,
+   "verdict_counts": {
+    "agree": 93,
+    "not_comparable": 35,
+    "mixed": 7
+   },
+   "reference_kind_counts": {
+    "committee_conclusion": 100,
+    "government_response": 35
+   },
+   "agreement_among_comparable_conclusions": {
+    "k": 93,
+    "n": 100,
+    "rate": 0.93,
+    "n_valid": 135,
+    "n_missing": 5,
+    "n_planned": 140,
+    "ci95_case_cluster": [
+     0.8541608146067415,
+     0.9897959183673469
+    ],
+    "draws_defined": 10000,
+    "draws_undefined": 0,
+    "n_cases": 20,
+    "n_cases_zero_denominator": 5
+   },
+   "denominator": "agree / (agree + disagree + mixed); excludes not_comparable, no_conclusion and unresolved; these counts are reported, never treated as disagreement."
+  },
+  "obligation": {
+   "n": 140,
+   "n_verified": 132,
+   "n_unresolved": 8,
+   "verdict_counts": {
+    "not_comparable": 35,
+    "agree": 88,
+    "mixed": 9
+   },
+   "reference_kind_counts": {
+    "government_response": 35,
+    "committee_conclusion": 97
+   },
+   "agreement_among_comparable_conclusions": {
+    "k": 88,
+    "n": 97,
+    "rate": 0.9072164948453608,
+    "n_valid": 132,
+    "n_missing": 8,
+    "n_planned": 140,
+    "ci95_case_cluster": [
+     0.8144329896907216,
+     0.9726027397260274
+    ],
+    "draws_defined": 10000,
+    "draws_undefined": 0,
+    "n_cases": 20,
+    "n_cases_zero_denominator": 5
+   },
+   "denominator": "agree / (agree + disagree + mixed); excludes not_comparable, no_conclusion and unresolved; these counts are reported, never treated as disagreement."
+  },
+  "all": {
+   "n": 280,
+   "n_verified": 267,
+   "n_unresolved": 13,
+   "verdict_counts": {
+    "not_comparable": 70,
+    "agree": 181,
+    "mixed": 16
+   },
+   "reference_kind_counts": {
+    "government_response": 70,
+    "committee_conclusion": 197
+   },
+   "agreement_among_comparable_conclusions": {
+    "k": 181,
+    "n": 197,
+    "rate": 0.9187817258883249,
+    "n_valid": 267,
+    "n_missing": 13,
+    "n_planned": 280,
+    "ci95_case_cluster": [
+     0.8383785992707155,
+     0.9766081871345029
+    ],
+    "draws_defined": 10000,
+    "draws_undefined": 0,
+    "n_cases": 20,
+    "n_cases_zero_denominator": 5
+   },
+   "denominator": "agree / (agree + disagree + mixed); excludes not_comparable, no_conclusion and unresolved; these counts are reported, never treated as disagreement."
+  }
+ },
+ "technical_retry": "At most two attempts. Initial max_tokens=2048; technical retry budget increased to 4096; no valid judgment selectively rerun.",
+ "excluded_v1": "Initial 772-record partial/salvaged-JSON audit discarded; retained in original QA ledger, not pooled.",
+ "reference_kind_inconsistent_cases": {},
+ "missing_label_bounds": {
+  "scope": "sampled inquiries consistently classified as committee-reference; conditional on that unvalidated source classification",
+  "n_cases": 15,
+  "n_reports": 210,
+  "agree": 181,
+  "unresolved": 13,
+  "lower_all_unresolved_nonagree": 0.861904761904762,
+  "upper_all_unresolved_agree": 0.9238095238095239
+ },
+ "legacy_call_accounting": "772 retained legacy result records are not complete API-call accounting; earlier pilot failures were not all preserved.",
+ "population_reference_metadata": {
+  "n_cases": 120,
+  "publication_type": {
+   "Special Report": 76,
+   "Report": 44
+  },
+  "provenance": {
+   "llm_summary": 80,
+   "conclusions_section": 40
+  }
+ },
+ "interpretation": "Automated exploratory classification, not human-calibrated and not a full-population agreement estimate. Within-case source-kind inconsistencies, if present, are listed explicitly; absence of inconsistency is not source validation. The result cannot establish which evidence is inconvenient for an agent."
+}

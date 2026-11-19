@@ -1,0 +1,13 @@
+{
+ "models": [
+  "claude-opus-5",
+  "gpt-5.6-sol",
+  "gpt-5.6-terra",
+  "gpt-5.6-luna",
+  "glm-5.3",
+  "glm-5.3-flash",
+  "qwen3.5-35b-a3b",
+  "deepseek-v4.1-flash"
+ ],
+ "note": "Revision view: court/open_review_v2/parliament = results/pooled8 (unchanged); open_review_v3 = results/rebuttal/or_r.jsonl (constructed-vote design on de-identified paper text, 8 models). Built by tools/build_revision8.sh; no model calls."
+}

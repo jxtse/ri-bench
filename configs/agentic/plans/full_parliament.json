@@ -1,0 +1,39 @@
+{
+ "batch": "full-parliament-20260911",
+ "scenario": "parliament",
+ "cases": [
+  "parl_62_1535",
+  "parl_153_1066",
+  "parl_203_237",
+  "parl_135_264",
+  "parl_62_9061",
+  "parl_98_6664",
+  "parl_98_6775",
+  "parl_81_1674",
+  "parl_78_381",
+  "parl_164_457",
+  "parl_328_320",
+  "parl_127_9040",
+  "parl_98_7641",
+  "parl_203_8859",
+  "parl_365_1698",
+  "parl_158_7842"
+ ],
+ "arms": [
+  "P"
+ ],
+ "conditions": [
+  "obligation",
+  "vanilla"
+ ],
+ "models": [
+  "foundry-a/claude-opus-5",
+  "foundry-a/gpt-5.6-sol",
+  "foundry-a/gpt-5.6-terra",
+  "foundry-b/gpt-5.6-luna",
+  "mint/glm-5.3"
+ ],
+ "thinking": "medium",
+ "timeout_s": 1200,
+ "pi_agent_dir": "configs/agentic/pi-agent"
+}

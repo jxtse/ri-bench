@@ -1,0 +1,38 @@
+\section{Case-cluster uncertainty}\label{app:statistics}
+All intervals in the paper resample cases. The unit of resampling is the paper, court case or inquiry, retaining every model, arm, prompt and witness attached to it. We draw 10,000 samples with replacement using NumPy's multinomial case weights, seed 20260914, and percentile 95\% intervals (linear quantiles). Models are treated as a fixed evaluated set, not sampled from a model population. Counts are pooled within a resample before ratios are computed. Zero-citation cases remain in the sampling frame; all-zero-denominator draws are undefined, excluded rather than set to zero, and counted in the machine-readable summary. Undefined decisions are missing, not negative outcomes. Between-condition conditional-rate differences can involve different cited subsets; same-claim improvements cannot be inferred from them.
+Pooled episode-level McNemar values treat repeated papers as independent and are not used for inference. No bootstrap-tail probabilities are presented as calibrated p values. Intervals are not multiplicity-adjusted; model-level contrasts and post hoc source checks are descriptive, and the finite set of cases limits generalization.
+\begin{table}[htbp]\centering\small
+\caption{Pooled endpoints with case-cluster intervals. Court pools both arms and prompts; OpenReview and Parliament include prompt-specific estimates, with Parliament also pooled across prompts. The denominators are rulings, extractable decisions, or cited witness claims as indicated, not independent cases.}
+\begin{tabular}{lrrl}\toprule Endpoint & Numerator / denominator & Cases & Rate [95\% CI] \\\midrule
+Court adoption (all) & 111 / 3832 & 120 & 0.03 [0.02, 0.04] \\
+OpenReview following (V) & 457 / 944 & 118 & 0.48 [0.43, 0.54] \\
+OpenReview following (O) & 260 / 939 & 118 & 0.28 [0.23, 0.33] \\
+Parliament loss (V) & 410 / 877 & 120 & 0.47 [0.41, 0.53] \\
+Parliament loss (O) & 349 / 1054 & 120 & 0.33 [0.28, 0.38] \\
+Parliament loss (all) & 759 / 1931 & 120 & 0.39 [0.35, 0.44] \\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[htbp]\centering\small
+\caption{Obligation minus Vanilla effects and case-cluster 95\% intervals. OpenReview uses valid same-paper/model decision pairs; Court correction pairs both arms within each case; Parliament is a difference of two conditional loss rates. Negative OpenReview/Parliament effects indicate lower measured rates.}
+\begin{tabular}{lccc}\toprule Model & OpenReview following & Court correction & Parliament loss \\\midrule
+Claude Opus 5 & -0.01 [-0.07, 0.04] & 0.31 [0.25, 0.38] & -0.00 [-0.08, 0.07] \\
+GPT-5.6 Sol & -0.26 [-0.35, -0.18] & 0.26 [0.20, 0.33] & -0.09 [-0.19, 0.00] \\
+GPT-5.6 Terra & -0.18 [-0.26, -0.10] & 0.03 [0.01, 0.06] & -0.18 [-0.31, -0.05] \\
+GPT-5.6 Luna & -0.14 [-0.22, -0.07] & -0.00 [-0.01, 0.00] & -0.12 [-0.24, 0.00] \\
+GLM-5.3 & -0.38 [-0.47, -0.30] & 0.21 [0.15, 0.27] & -0.24 [-0.34, -0.14] \\
+GLM-5.3-Flash & -0.21 [-0.29, -0.13] & 0.11 [0.07, 0.16] & -0.23 [-0.32, -0.14] \\
+Qwen3.5-35B-A3B & -0.39 [-0.50, -0.29] & -0.00 [-0.01, 0.00] & 0.01 [-0.11, 0.12] \\
+DeepSeek-V4.1-Flash & -0.09 [-0.18, -0.01] & 0.37 [0.30, 0.45] & -0.19 [-0.28, -0.11] \\
+Pooled & -0.21 [-0.24, -0.17] & 0.16 [0.14, 0.18] & -0.14 [-0.18, -0.09] \\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[htbp]\centering\small
+\caption{Selected pooled paired/design contrasts. Signed changes are right minus left for decision pairs, and aligned minus opposed for witness comparisons. Different witness identity is not a randomized treatment.}\label{tab:app-contrasts}
+\begin{tabular}{lrl}\toprule Contrast & Valid denominator & Effect [95\% CI] \\\midrule
+Real votes A to B, net toward minority (V) & 711 & 0.01 [-0.01, 0.02] \\
+Real votes A to B, net toward minority (O) & 710 & 0.04 [0.01, 0.06] \\
+Constructed control to adversarial (all) & 1878 & 0.33 [0.29, 0.37] \\
+Court B minus A adoption & 1914 & -0.00 [-0.01, 0.01] \\
+Citation aligned minus opposed (V) & 960 / 960 & 0.09 [0.02, 0.16] \\
+Loss aligned minus opposed (V) & 482 / 395 & 0.06 [-0.04, 0.15] \\
+Citation aligned minus opposed (O) & 960 / 960 & 0.03 [-0.06, 0.12] \\
+Loss aligned minus opposed (O) & 543 / 511 & 0.05 [-0.04, 0.14] \\
+\bottomrule\end{tabular}\end{table}

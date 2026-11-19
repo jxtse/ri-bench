@@ -1,0 +1,364 @@
+{
+ "excluded_lanes": {
+  "qwen": "OpenRouter route, superseded by qwen-vllm"
+ },
+ "scenarios": {
+  "or_e1": {
+   "file": "or_e1.jsonl",
+   "lanes": {
+    "deepseek": {
+     "archived_failed_attempts": 14,
+     "exported": 236,
+     "not_complete": [],
+     "planned": 236
+    },
+    "glm": {
+     "archived_failed_attempts": 0,
+     "exported": 236,
+     "not_complete": [],
+     "planned": 236
+    },
+    "glmflash": {
+     "archived_failed_attempts": 0,
+     "exported": 236,
+     "not_complete": [],
+     "planned": 236
+    },
+    "luna": {
+     "archived_failed_attempts": 0,
+     "exported": 236,
+     "not_complete": [],
+     "planned": 236
+    },
+    "opus": {
+     "archived_failed_attempts": 0,
+     "exported": 236,
+     "not_complete": [],
+     "planned": 236
+    },
+    "qwen-vllm": {
+     "archived_failed_attempts": 4,
+     "exported": 233,
+     "not_complete": [
+      {
+       "arm": "P",
+       "case_id": "iclr2025_13876",
+       "condition": "obligation",
+       "episode_id": "0bba63dabd87c21ac6a5222ac7be9bdd731389f2f4370031d04b2b8cac3b3023",
+       "roles": {
+        "area_chair": {
+         "errors": [
+          "Unexpected tool outside read-only allowlist"
+         ],
+         "status": "error"
+        }
+       }
+      },
+      {
+       "arm": "P",
+       "case_id": "iclr2026_25587",
+       "condition": "obligation",
+       "episode_id": "b81bbe92040f227f5f11faef86dc323df7951fd650b92bf3bca61fdfd72a52cc",
+       "roles": {
+        "area_chair": {
+         "errors": [
+          "Unexpected tool outside read-only allowlist"
+         ],
+         "status": "error"
+        }
+       }
+      },
+      {
+       "arm": "P",
+       "case_id": "iclr2025_13876",
+       "condition": "vanilla",
+       "episode_id": "e505c9c005937bb9916afd5977ca61e17b806570c4a96e753ebfad2b7705e836",
+       "roles": {
+        "area_chair": {
+         "errors": [
+          "Unexpected tool outside read-only allowlist"
+         ],
+         "status": "error"
+        }
+       }
+      }
+     ],
+     "planned": 236
+    },
+    "sol": {
+     "archived_failed_attempts": 0,
+     "exported": 236,
+     "not_complete": [],
+     "planned": 236
+    },
+    "terra": {
+     "archived_failed_attempts": 1,
+     "exported": 236,
+     "not_complete": [],
+     "planned": 236
+    }
+   },
+   "rows": 1885,
+   "sha256": "e3d5d7c932698c38a71475761adc271adf481c23f6c51027f39214bdb9952834"
+  },
+  "or_e2a": {
+   "file": "or_e2a.jsonl",
+   "lanes": {
+    "deepseek": {
+     "archived_failed_attempts": 28,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "glm": {
+     "archived_failed_attempts": 1,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "glmflash": {
+     "archived_failed_attempts": 3,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "luna": {
+     "archived_failed_attempts": 12,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "opus": {
+     "archived_failed_attempts": 39,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "qwen-vllm": {
+     "archived_failed_attempts": 2,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "sol": {
+     "archived_failed_attempts": 3,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "terra": {
+     "archived_failed_attempts": 15,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    }
+   },
+   "rows": 3776,
+   "sha256": "5f2febe00bce7429865607173dbc0dd1706355154134b714e8339a23c52b85f9"
+  },
+  "or_e2b": {
+   "file": "or_e2b.jsonl",
+   "lanes": {
+    "deepseek": {
+     "archived_failed_attempts": 2,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "glm": {
+     "archived_failed_attempts": 0,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "glmflash": {
+     "archived_failed_attempts": 1,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "luna": {
+     "archived_failed_attempts": 0,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "opus": {
+     "archived_failed_attempts": 0,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "qwen-vllm": {
+     "archived_failed_attempts": 4,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "sol": {
+     "archived_failed_attempts": 1,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "terra": {
+     "archived_failed_attempts": 0,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    }
+   },
+   "rows": 3776,
+   "sha256": "c2416d9fa06fbc455e7609b92ce675357056bfc6134c06f64c5d172036988250"
+  },
+  "or_e3a": {
+   "file": "or_e3a.jsonl",
+   "lanes": {
+    "glm": {
+     "archived_failed_attempts": 0,
+     "exported": 60,
+     "not_complete": [],
+     "planned": 60
+    },
+    "opus": {
+     "archived_failed_attempts": 0,
+     "exported": 60,
+     "not_complete": [],
+     "planned": 60
+    },
+    "qwen-vllm": {
+     "archived_failed_attempts": 0,
+     "exported": 60,
+     "not_complete": [],
+     "planned": 60
+    },
+    "sol": {
+     "archived_failed_attempts": 0,
+     "exported": 60,
+     "not_complete": [],
+     "planned": 60
+    }
+   },
+   "rows": 240,
+   "sha256": "3474472bcca3dc803f36bd82d2b75aff5adc1a04eb991024063ae4cb6ee05542"
+  },
+  "or_e3b": {
+   "file": "or_e3b.jsonl",
+   "lanes": {
+    "glm": {
+     "archived_failed_attempts": 0,
+     "exported": 60,
+     "not_complete": [],
+     "planned": 60
+    },
+    "opus": {
+     "archived_failed_attempts": 1,
+     "exported": 60,
+     "not_complete": [],
+     "planned": 60
+    },
+    "qwen-vllm": {
+     "archived_failed_attempts": 0,
+     "exported": 60,
+     "not_complete": [],
+     "planned": 60
+    },
+    "sol": {
+     "archived_failed_attempts": 1,
+     "exported": 60,
+     "not_complete": [],
+     "planned": 60
+    }
+   },
+   "rows": 240,
+   "sha256": "eb61dd2fed70ac5ab127c98c7fa143e28d79c68de82c09c854e185b89a2cb216"
+  },
+  "or_e3c": {
+   "file": "or_e3c.jsonl",
+   "lanes": {
+    "glm": {
+     "archived_failed_attempts": 0,
+     "exported": 60,
+     "not_complete": [],
+     "planned": 60
+    },
+    "opus": {
+     "archived_failed_attempts": 2,
+     "exported": 60,
+     "not_complete": [],
+     "planned": 60
+    },
+    "qwen-vllm": {
+     "archived_failed_attempts": 0,
+     "exported": 60,
+     "not_complete": [],
+     "planned": 60
+    },
+    "sol": {
+     "archived_failed_attempts": 0,
+     "exported": 60,
+     "not_complete": [],
+     "planned": 60
+    }
+   },
+   "rows": 240,
+   "sha256": "456001f8cbe8e31d3288928d22010f6b4f28c2b8cebcb306f9681572adf51426"
+  },
+  "or_r": {
+   "file": "or_r.jsonl",
+   "lanes": {
+    "deepseek": {
+     "archived_failed_attempts": 42,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "glm": {
+     "archived_failed_attempts": 0,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "glmflash": {
+     "archived_failed_attempts": 0,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "luna": {
+     "archived_failed_attempts": 2,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "opus": {
+     "archived_failed_attempts": 1,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "qwen-vllm": {
+     "archived_failed_attempts": 2,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "sol": {
+     "archived_failed_attempts": 2,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    },
+    "terra": {
+     "archived_failed_attempts": 3,
+     "exported": 472,
+     "not_complete": [],
+     "planned": 472
+    }
+   },
+   "rows": 3776,
+   "sha256": "848cd195d60f54f3ab0d12ba41b51c5250d8491a51fdbaf2a008e4d90a4344cc"
+  }
+ },
+ "source": "runs/agentic/rebuttal-<scenario>-<lane>-20261107"
+}

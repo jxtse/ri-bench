@@ -1,0 +1,54 @@
+{
+ "court": {
+  "batches": {
+   "full-court-ark-20260911": 480,
+   "full-court-foundry-b-20260911": 480,
+   "full-court-foundry-b-terra-20260911": 480,
+   "full-court-mint-20260911": 480,
+   "full-court-openrouter-20260911": 480,
+   "full-court-foundry-a-20260911": 960
+  },
+  "file": "court.jsonl",
+  "rows": 3360,
+  "sha256": "6a4e443edccb8e5a7c7e218da23d488d29ed77505bab1748d33e13939218fb34"
+ },
+ "open_review_v2": {
+  "batches": {
+   "full-openreview-foundry-b-20260911": 476,
+   "full-openreview-foundry-b-terra-20260911": 476,
+   "full-openreview-mint-20260911": 476,
+   "full-openreview-foundry-a1-20260911": 476,
+   "full-openreview-foundry-a2-20260911": 476
+  },
+  "file": "open_review_v2.jsonl",
+  "rows": 2380,
+  "sha256": "82de327326e0edfe9a7b6a0093c957eca3ff0ba5bd7bad9d7f22054e95c0f939"
+ },
+ "open_review_v3": {
+  "batches": {
+   "full-openreview-v3-ark-20260913": 472,
+   "full-openreview-v3-foundry-b-20260913": 472,
+   "full-openreview-v3-foundry-b-terra-20260913": 472,
+   "full-openreview-v3-mint-20260913": 472,
+   "full-openreview-v3-openrouter-20260913": 472,
+   "full-openreview-v3-foundry-a1-20260913": 472,
+   "full-openreview-v3-foundry-a2-20260913": 472
+  },
+  "file": "open_review_v3.jsonl",
+  "rows": 3304,
+  "sha256": "bf74d388a8a2b6bd330b737d14b61462fa70357bb6e34ddc1f9f97b614cc6bee"
+ },
+ "parliament": {
+  "batches": {
+   "full-parliament-ark-20260911": 240,
+   "full-parliament-foundry-b-20260911": 240,
+   "full-parliament-foundry-b-terra-20260911": 240,
+   "full-parliament-mint-20260911": 240,
+   "full-parliament-openrouter-20260911": 240,
+   "full-parliament-foundry-a-20260911": 480
+  },
+  "file": "parliament.jsonl",
+  "rows": 1680,
+  "sha256": "c0e6c097e261e237eefb7aa0d0c918bb620936cee0651334a4f81ece440346b6"
+ }
+}

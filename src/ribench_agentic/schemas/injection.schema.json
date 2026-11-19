@@ -1,0 +1,268 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Frozen injection input",
+  "$defs": {
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "patterns": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/text"
+      }
+    },
+    "side": {
+      "enum": [
+        "petitioner",
+        "respondent"
+      ]
+    },
+    "excerpt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "anchor_text",
+        "replacement_text"
+      ],
+      "properties": {
+        "anchor_text": {
+          "$ref": "#/$defs/text"
+        },
+        "replacement_text": {
+          "$ref": "#/$defs/text"
+        }
+      }
+    },
+    "witness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "witness_index",
+        "witness_name",
+        "stance_rationale",
+        "anchor_text",
+        "qualified_text",
+        "qualifiers",
+        "rules"
+      ],
+      "anyOf": [
+        {
+          "required": [
+            "submission_id"
+          ]
+        },
+        {
+          "required": [
+            "submitter"
+          ]
+        }
+      ],
+      "properties": {
+        "witness_name": {
+          "$ref": "#/$defs/text"
+        },
+        "submitter": {
+          "$ref": "#/$defs/text"
+        },
+        "submission_id": {
+          "oneOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "$ref": "#/$defs/text"
+            }
+          ]
+        },
+        "anchor_text": {
+          "$ref": "#/$defs/text"
+        },
+        "qualifiers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "kind": {
+                "$ref": "#/$defs/text"
+              },
+              "text": {
+                "$ref": "#/$defs/text"
+              }
+            }
+          }
+        },
+        "rules": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "claim_patterns",
+            "qualifier_patterns",
+            "hedge_patterns"
+          ],
+          "properties": {
+            "claim_patterns": {
+              "$ref": "#/$defs/patterns"
+            },
+            "qualifier_patterns": {
+              "$ref": "#/$defs/patterns"
+            },
+            "hedge_patterns": {
+              "$ref": "#/$defs/patterns"
+            }
+          }
+        },
+        "witness_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "stance_rationale": {
+          "$ref": "#/$defs/text"
+        },
+        "qualified_text": {
+          "$ref": "#/$defs/text"
+        },
+        "verifier": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scenario",
+        "case_id",
+        "arms",
+        "error",
+        "truth",
+        "fact_kind",
+        "relevance",
+        "rules"
+      ],
+      "properties": {
+        "scenario": {
+          "const": "court"
+        },
+        "case_id": {
+          "$ref": "#/$defs/text"
+        },
+        "arm_side": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "A",
+            "B"
+          ],
+          "properties": {
+            "A": {
+              "$ref": "#/$defs/side"
+            },
+            "B": {
+              "$ref": "#/$defs/side"
+            }
+          }
+        },
+        "arms": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "petitioner",
+            "respondent"
+          ],
+          "properties": {
+            "petitioner": {
+              "$ref": "#/$defs/excerpt"
+            },
+            "respondent": {
+              "$ref": "#/$defs/excerpt"
+            }
+          }
+        },
+        "error": {
+          "$ref": "#/$defs/text"
+        },
+        "truth": {
+          "$ref": "#/$defs/text"
+        },
+        "fact_kind": {
+          "$ref": "#/$defs/text"
+        },
+        "relevance": {
+          "$ref": "#/$defs/text"
+        },
+        "rules": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "adopted_patterns",
+            "corrected_patterns",
+            "truth_patterns"
+          ],
+          "properties": {
+            "adopted_patterns": {
+              "$ref": "#/$defs/patterns"
+            },
+            "corrected_patterns": {
+              "$ref": "#/$defs/patterns"
+            },
+            "truth_patterns": {
+              "$ref": "#/$defs/patterns"
+            }
+          }
+        },
+        "verifier": {
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scenario",
+        "case_id",
+        "design",
+        "witnesses",
+        "related_conclusion"
+      ],
+      "properties": {
+        "scenario": {
+          "const": "parliament"
+        },
+        "case_id": {
+          "$ref": "#/$defs/text"
+        },
+        "design": {
+          "const": "paired_headline_qualification_v1"
+        },
+        "related_conclusion": {
+          "$ref": "#/$defs/text"
+        },
+        "witnesses": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "aligned",
+            "opposed"
+          ],
+          "properties": {
+            "aligned": {
+              "$ref": "#/$defs/witness"
+            },
+            "opposed": {
+              "$ref": "#/$defs/witness"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

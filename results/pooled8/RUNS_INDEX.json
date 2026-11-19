@@ -1,0 +1,13 @@
+{
+ "models": [
+  "claude-opus-5",
+  "gpt-5.6-sol",
+  "gpt-5.6-terra",
+  "gpt-5.6-luna",
+  "glm-5.3",
+  "glm-5.3-flash",
+  "qwen3.5-35b-a3b",
+  "deepseek-v4.1-flash"
+ ],
+ "note": "Eight-model pooled view: concatenation of the frozen seven-model export results/*.jsonl and the supplementary DeepSeek-V4.1-Flash export results/supplement/deepseek/*.jsonl. Built by tools/build_pooled8.sh; no model calls."
+}

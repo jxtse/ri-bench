@@ -1,0 +1,44 @@
+# Secrets and local provider configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+auth.json
+configs/agentic/pi-agent/models.json
+configs/agentic/pi-agent/auth.json
+configs/agentic/pi-agent/models-store.json
+configs/agentic/pi-agent/sessions/
+
+# Python / tooling
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+.DS_Store
+node_modules/
+.local/
+
+# Build outputs (not the source package src/ribench_agentic/build/)
+/build/
+manuscript/*.aux
+manuscript/*.log
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.out
+manuscript/*.fls
+manuscript/*.fdb_latexmk
+manuscript/*.synctex.gz
+manuscript/main.pdf
+
+# Downloaded or regenerated data
+/data/cases/
+/data/agentic/
+/runs/
+*.log

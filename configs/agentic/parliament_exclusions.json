@@ -1,0 +1,15 @@
+{
+ "rule": "exclude parliament cases whose written submissions total > 400,000 characters (~100k tokens): a 200k-context subject cannot read the full record; observed 2026-09-11 as Opus stopReason=length with empty output on parl_153_1066 (1.04M chars). Applied uniformly to all models; replaced by next case in frozen order.",
+ "excluded": [
+  "parl_153_1066",
+  "parl_17_7281",
+  "parl_62_8736",
+  "parl_83_496"
+ ],
+ "sizes": {
+  "parl_153_1066": 594525,
+  "parl_17_7281": 471847,
+  "parl_62_8736": 1043333,
+  "parl_83_496": 513845
+ }
+}

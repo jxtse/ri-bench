@@ -1,0 +1,23 @@
+[build-system]
+requires = []
+build-backend = "build_backend"
+backend-path = ["."]
+
+[project]
+name = "ri-bench"
+version = "1.0.0"
+description = "RI-Bench: measuring role integrity of senior agents in hierarchical multi-agent systems"
+requires-python = ">=3.11"
+dependencies = ["jsonschema>=4"]
+
+[project.scripts]
+ribench-agentic = "ribench_agentic.cli:main"
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+figures = ["matplotlib>=3.8", "numpy>=1.26"]
+annotation = ["openpyxl>=3.1"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
